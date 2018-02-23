@@ -60,21 +60,54 @@ def write_file(filename, content_dic):
 
 		result_str += '\"datasource\": [\n\t'
 
-		#get dataset
-		minValue = int(float(content_dic['MinValue']))
-		maxValue = int(float(content_dic['MaxValue']))
-		offset = content_dic['Offset']
-		if offset == "within":
-			data_array = range(minValue, maxValue+1)
-			random.shuffle(data_array)
-		else:
-			data_array = range(minValue, maxValue+1, int(float(offset)))
-
 		#get the task field
 		task_str = '\"' + content_dic['Description'] + '\"'
 		
 		#get the image field
 		image_str = '\"' + content_dic['Shape'] + '\"' 
+
+		#get dataset
+		minValue = int(float(content_dic['MinValue']))
+		maxValue = int(float(content_dic['MaxValue']))
+		offset = content_dic['Offset']
+
+		#increasing/decreasing
+		seq_str = content_dic['Increasing/Decreasing/Random']
+		if seq_str == "Increasing":
+			data_array = range(minValue, maxValue+1, int(float(offset)))
+		else if seq_str == "Decreasing":
+			data_array = range(minValue, maxValue+1, -int(float(offset)))
+		else:
+			##########################need to be fixed#########################
+			data_array = []
+			for limit in range(minValue, maxValue, int(float(offset))):
+				rand_num = random.randint(limit, limit+int(float(offset)))
+				data_array.extend([rand_num])
+
+		#construct data set from all data array
+		data_set = []
+		if "Count" in task_str: 
+			if "up" in task_str:
+				operand2 = int(float(offset))
+			else:
+				operand2 = -int(float(offset))
+			for data in data_array:
+				operand1 = data
+				operand3 = operand1 + operand2
+			 	data_set.extend([operand1, operand2, operand3])
+		else:
+			##########################need to be fixed#########################
+			if 'Add' in content_dic['Add/subtract']:
+				for data in data_array:
+					operand1 = data
+					operand2 = 
+					operand3 = operand1 + operand2
+				 	data_set.extend([operand1, operand2, operand3])
+
+
+
+					
+
 
 		#construct each row in datasouce
 		quest_num = int(float(content_dic['# questions']))
@@ -83,6 +116,7 @@ def write_file(filename, content_dic):
 
 			#task
 			result_str +='\"task\": ' + task_str + ', '
+
 
 			#dataset
 			result_str += '\"dataset\": ' + str(data_array) + ', '
@@ -109,7 +143,7 @@ def main():
 	#there should be only one command line argument 
 	#(not counting the program itself)
 	if len(sys.argv) != 3:
-		print("Wrong number of cmdline args!")
+		print("Wrong number of cmdline args!!")
 
 	excel_path = sys.argv[2]
 	content_list = read_spreadsheet(excel_path)
