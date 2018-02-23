@@ -45,26 +45,30 @@ def write_file(filename, content_dic):
 			result_str += '\"bootFeatures\": \"FTR_DEMO_'
 			if Add in content_dic['Add/subtract']:
 				result_str += 'ADD\",\n\n\t'
-				operation_str = "+"
 			else:
 				result_str += 'SUB\",\n\n\t'
-				operation_str = "-"
 			fixed_str += '\"demo\", '
 		else:
 			level_str = content_dic['Level']
 			fixed_str += '\"' + level_str + '\"'
 
+		#get operation
+		if 'Add' in content_dic['Add/subtract']:
+			operation_str = '\"' + "+" '\"'
+		else:
+			operation_str = '\"' + "-" '\"'
+
 		result_str += '\"datasource\": [\n\n\t'
 
 		#get dataset
-		minValue = content_dic['MinValue']
-		maxValue = content_dic['MaxValue']
+		minValue = int(float(content_dic['MinValue']))
+		maxValue = int(float(content_dic['MaxValue']))
 		offset = content_dic['Offset']
 		if offset == "within":
 			data_array = range(minValue, maxValue+1)
 			random.shuffle(data_array)
 		else:
-			data_array = range(minValue, maxValue+1, int(offset))
+			data_array = range(minValue, maxValue+1, int(float(offset)))
 
 		#get the task field
 			task_str = '\"' + content_dic['Description'] + '\"'
@@ -116,9 +120,11 @@ def main():
 			for content_dic in content_list:
 				radix_index = content_dic['Level'].index('.')
 				level_num = content_dic['Level'][:radix_index]
-				level_str = "level:"+level_num
+				level_str = "level" + level_num + ":"
 
+				print(level_str)
 				if level_str in filename:
+					print(filename)
 					write_file(filename, content_dic)
 				break
 
