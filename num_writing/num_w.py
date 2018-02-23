@@ -1,5 +1,5 @@
 from xlrd import open_workbook
-import csv, sys, math, os
+import sys, os
 
 def read_spreadsheet(excel_descriptor):
 
