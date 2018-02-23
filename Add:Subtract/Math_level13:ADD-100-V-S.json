@@ -1,0 +1,24 @@
+{
+	"bootFeatures": "FTR_DEMO_ADD",
+
+	"datasource": [
+	
+		{"type": "Asm_Data", "level": "demo", "task": "Count up by 100", "dataset": [0, 100, 200, 300, 400, 500, 600, 700, 800], "operation": "+", "image": "pentagon"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Count up by 100", "dataset": [0, 100, 200, 300, 400, 500, 600, 700, 800], "operation": "+", "image": "pentagon"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Count up by 100", "dataset": [0, 100, 200, 300, 400, 500, 600, 700, 800], "operation": "+", "image": "pentagon"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Count up by 100", "dataset": [0, 100, 200, 300, 400, 500, 600, 700, 800], "operation": "+", "image": "pentagon"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Count up by 100", "dataset": [0, 100, 200, 300, 400, 500, 600, 700, 800], "operation": "+", "image": "pentagon"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Count up by 100", "dataset": [0, 100, 200, 300, 400, 500, 600, 700, 800], "operation": "+", "image": "pentagon"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Count up by 100", "dataset": [0, 100, 200, 300, 400, 500, 600, 700, 800], "operation": "+", "image": "pentagon"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Count up by 100", "dataset": [0, 100, 200, 300, 400, 500, 600, 700, 800], "operation": "+", "image": "pentagon"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Count up by 100", "dataset": [0, 100, 200, 300, 400, 500, 600, 700, 800], "operation": "+", "image": "pentagon"}]
+
+}

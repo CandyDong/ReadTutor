@@ -41,9 +41,9 @@ def write_file(filename, content_dic):
 		result_str = "{\n\t"#newline, tab
 		fixed_str = '\n\t\t{\"type\": \"Asm_Data\", \"level\": ' #newline, tab, tab
 
-		if "TRUE" in content_dic['Demo']:
+		if content_dic['Demo']:
 			result_str += '\"bootFeatures\": \"FTR_DEMO_'
-			if Add in content_dic['Add/subtract']:
+			if 'Add' in content_dic['Add/subtract']:
 				result_str += 'ADD\",\n\n\t'
 			else:
 				result_str += 'SUB\",\n\n\t'
@@ -58,7 +58,7 @@ def write_file(filename, content_dic):
 		else:
 			operation_str = '\"' + "-" '\"'
 
-		result_str += '\"datasource\": [\n\n\t'
+		result_str += '\"datasource\": [\n\t'
 
 		#get dataset
 		minValue = int(float(content_dic['MinValue']))
@@ -71,10 +71,10 @@ def write_file(filename, content_dic):
 			data_array = range(minValue, maxValue+1, int(float(offset)))
 
 		#get the task field
-			task_str = '\"' + content_dic['Description'] + '\"'
+		task_str = '\"' + content_dic['Description'] + '\"'
 		
 		#get the image field
-			image_str = '\"' + content_dic['Shape'] + '\"' 
+		image_str = '\"' + content_dic['Shape'] + '\"' 
 
 		#construct each row in datasouce
 		quest_num = int(float(content_dic['# questions']))
@@ -95,7 +95,11 @@ def write_file(filename, content_dic):
 
 			if quest_index == (quest_num-1): 
 				result_str += ']\n\n}'
+				break
 			result_str += ',\n'
+
+		file_descriptor.write(result_str)
+		file_descriptor.close()
 
 
 
@@ -122,12 +126,10 @@ def main():
 				level_num = content_dic['Level'][:radix_index]
 				level_str = "level" + level_num + ":"
 
-				print(level_str)
 				if level_str in filename:
 					print(filename)
 					write_file(filename, content_dic)
-				break
-
+					break
 
 if __name__ == '__main__':
     main()
