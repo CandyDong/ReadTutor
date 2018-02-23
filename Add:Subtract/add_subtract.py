@@ -1,5 +1,5 @@
 from xlrd import open_workbook
-import sys, os
+import sys, os, random
 
 
 def read_spreadsheet(excel_path):
@@ -39,19 +39,60 @@ def write_file(filename, content_dic):
 	with open(filename, 'w') as file_descriptor:
 
 		result_str = "{\n\t"#newline, tab
+		fixed_str = '\n\t\t{\"type\": \"Asm_Data\", \"level\": ' #newline, tab, tab
 
 		if "TRUE" in content_dic['Demo']:
 			result_str += '\"bootFeatures\": \"FTR_DEMO_'
 			if Add in content_dic['Add/subtract']:
 				result_str += 'ADD\",\n\n\t'
+				operation_str = "+"
 			else:
 				result_str += 'SUB\",\n\n\t'
+				operation_str = "-"
+			fixed_str += '\"demo\", '
+		else:
+			level_str = content_dic['Level']
+			fixed_str += '\"' + level_str + '\"'
 
-		result_str += '\"datasource\": ['
+		result_str += '\"datasource\": [\n\n\t'
 
+		#get dataset
+		minValue = content_dic['MinValue']
+		maxValue = content_dic['MaxValue']
+		offset = content_dic['Offset']
+		if offset == "within":
+			data_array = range(minValue, maxValue+1)
+			random.shuffle(data_array)
+		else:
+			data_array = range(minValue, maxValue+1, int(offset))
+
+		#get the task field
+			task_str = '\"' + content_dic['Description'] + '\"'
+		
+		#get the image field
+			image_str = '\"' + content_dic['Shape'] + '\"' 
+
+		#construct each row in datasouce
 		quest_num = int(float(content_dic['# questions']))
 		for quest_index in range(0, quest_num):
-			result_str += ""
+			result_str += fixed_str
+
+			#task
+			result_str +='\"task\": ' + task_str + ', '
+
+			#dataset
+			result_str += '\"dataset\": ' + str(data_array) + ', '
+
+			#operation
+			result_str += '\"operation\": ' + operation_str + ', '
+
+			#image
+			result_str += '\"image\": ' + image_str + '}'
+
+			if quest_index == (quest_num-1): 
+				result_str += ']\n\n}'
+			result_str += ',\n'
+
 
 
 
@@ -74,11 +115,13 @@ def main():
 			#find the attribute dic for this specific file
 			for content_dic in content_list:
 				radix_index = content_dic['Level'].index('.')
-				level_str = content_dic['Level'][:radix_index]
-				
+				level_num = content_dic['Level'][:radix_index]
+				level_str = "level:"+level_num
+
 				if level_str in filename:
 					write_file(filename, content_dic)
 				break
+
 
 if __name__ == '__main__':
     main()
