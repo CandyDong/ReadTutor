@@ -3,22 +3,22 @@
 
 	"datasource": [
 	
-		{"type": "Asm_Data", "level": "demo", "task": "Subtract single digits no Borrow", "dataset": [8,3,5], "operation": "-", "image": "star"},
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract single digits no Borrow", "dataset": [7,2,5], "operation": "-", "image": "star"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Subtract single digits no Borrow", "dataset": [3,2,1], "operation": "-", "image": "star"},
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract single digits no Borrow", "dataset": [6,2,4], "operation": "-", "image": "star"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Subtract single digits no Borrow", "dataset": [2,1,1], "operation": "-", "image": "star"},
-
-		{"type": "Asm_Data", "level": "demo", "task": "Subtract single digits no Borrow", "dataset": [4,3,1], "operation": "-", "image": "star"},
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract single digits no Borrow", "dataset": [8,5,3], "operation": "-", "image": "star"},
 
 		{"type": "Asm_Data", "level": "demo", "task": "Subtract single digits no Borrow", "dataset": [5,1,4], "operation": "-", "image": "star"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Subtract single digits no Borrow", "dataset": [7,5,2], "operation": "-", "image": "star"},
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract single digits no Borrow", "dataset": [6,2,4], "operation": "-", "image": "star"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Subtract single digits no Borrow", "dataset": [5,1,4], "operation": "-", "image": "star"},
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract single digits no Borrow", "dataset": [7,3,4], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract single digits no Borrow", "dataset": [4,0,4], "operation": "-", "image": "star"},
 
 		{"type": "Asm_Data", "level": "demo", "task": "Subtract single digits no Borrow", "dataset": [7,6,1], "operation": "-", "image": "star"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Subtract single digits no Borrow", "dataset": [4,4,0], "operation": "-", "image": "star"}]
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract single digits no Borrow", "dataset": [8,4,4], "operation": "-", "image": "star"}]
 
 }

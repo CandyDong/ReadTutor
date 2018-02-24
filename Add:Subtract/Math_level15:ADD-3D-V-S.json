@@ -1,0 +1,66 @@
+{
+	"bootFeatures": "FTR_DEMO_ADD",
+
+	"datasource": [
+	
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [694,304,998], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [112,776,888], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [511,406,917], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [347,500,847], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [243,314,557], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [112,482,594], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [431,112,543], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [300,147,447], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [215,150,365], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [301,390,691], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [434,231,665], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [138,611,749], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [524,215,739], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [106,583,689], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [102,165,267], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [220,667,887], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [330,112,442], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [631,348,979], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [671,325,996], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [334,143,477], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [353,426,779], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [605,371,976], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [425,264,689], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [153,605,758], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [122,472,594], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [501,252,753], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [204,290,494], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [321,655,976], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [421,517,938], "operation": "+", "image": "circle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add triple digits no carry", "dataset": [232,445,677], "operation": "+", "image": "circle"}]
+
+}

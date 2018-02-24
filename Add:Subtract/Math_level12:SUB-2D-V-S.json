@@ -1,0 +1,66 @@
+{
+	"bootFeatures": "FTR_DEMO_SUB",
+
+	"datasource": [
+	
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [58,40,18], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [63,40,23], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [15,11,4], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [65,31,34], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [67,25,42], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [46,35,11], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [15,11,4], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [64,20,44], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [54,31,23], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [29,13,16], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [14,12,2], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [67,42,25], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [65,35,30], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [43,32,11], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [77,42,35], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [25,25,0], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [76,70,6], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [57,52,5], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [49,26,23], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [74,50,24], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [79,36,43], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [64,42,22], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [74,20,54], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [57,51,6], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [70,30,40], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [50,50,0], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [41,20,21], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [73,10,63], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [78,42,36], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract double digits no Borrow", "dataset": [37,36,1], "operation": "-", "image": "star"}]
+
+}

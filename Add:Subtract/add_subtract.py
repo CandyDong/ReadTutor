@@ -122,7 +122,6 @@ def write_file(filename, content_dic):
 				offset = 1
 			for limit in range(minValue, maxValue+1, offset):
 				data_array.append(limit)
-			print("random data_array is: ", data_array)
 
 		#construct data set from all data array
 		data_set = []
@@ -138,13 +137,11 @@ def write_file(filename, content_dic):
 				operand1 = data
 				operand3 = operand1 + operand2
 			 	data_set.append([str(operand1), str(abs(operand2)), str(operand3)])
-			print("ordered data_set is: ", data_set)
 		else:
 			#find two operands with which addition/subtraction does not involve carry
 			#and in different range
 			while(True):
 				if (len(data_set) >= quest_num):
-					print("length of data set is: ", len(data_set))
 					break
 				i = random.randint(0, array_length-2)
 				operand1 = random.randint(data_array[i], data_array[i+1])
@@ -152,20 +149,15 @@ def write_file(filename, content_dic):
 				operand2 = random.randint(data_array[j], data_array[j+1])
 				if 'Add' in content_dic['Add/subtract']:
 					if isValidOperation(operand1, operand2, "+"):
-						print("valid add")
 						operand3 = operand1 + operand2
 						data_set.append([str(operand1), str(operand2), str(operand3)])
 				else:
 					if isValidOperation(operand1, operand2, "-"):
-						print("valid sub")
 						operand3 = operand1 - operand2
 		 				data_set.append([str(operand1), str(operand2), str(operand3)])
 
-			print("random data_set is: ", data_set)
-
 		#construct each row in datasouce
 		for quest_index in range(0, quest_num):
-			print("quest_index is: ", quest_index)
 			result_str += fixed_str
 
 			#task
@@ -174,7 +166,6 @@ def write_file(filename, content_dic):
 
 			#dataset
 			cur_data_set = data_set[quest_index]
-			print("cur_data_set is: ", cur_data_set, "\n")
 			result_str += '\"dataset\": [' + ','.join(cur_data_set) + '], '
 
 			#operation

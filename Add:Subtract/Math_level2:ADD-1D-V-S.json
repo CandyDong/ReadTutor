@@ -3,22 +3,22 @@
 
 	"datasource": [
 	
-		{"type": "Asm_Data", "level": "demo", "task": "Add single digits no carry", "dataset": [0,3,3], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add single digits no carry", "dataset": [6,3,9], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add single digits no carry", "dataset": [2,0,2], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add single digits no carry", "dataset": [5,4,9], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add single digits no carry", "dataset": [3,2,5], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add single digits no carry", "dataset": [6,2,8], "operation": "+", "image": "triangle"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Add single digits no carry", "dataset": [2,7,9], "operation": "+", "image": "triangle"},
 
 		{"type": "Asm_Data", "level": "demo", "task": "Add single digits no carry", "dataset": [2,4,6], "operation": "+", "image": "triangle"},
 
 		{"type": "Asm_Data", "level": "demo", "task": "Add single digits no carry", "dataset": [2,1,3], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add single digits no carry", "dataset": [2,7,9], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add single digits no carry", "dataset": [1,2,3], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add single digits no carry", "dataset": [0,5,5], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add single digits no carry", "dataset": [4,4,8], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add single digits no carry", "dataset": [7,2,9], "operation": "+", "image": "triangle"},
-
-		{"type": "Asm_Data", "level": "demo", "task": "Add single digits no carry", "dataset": [2,5,7], "operation": "+", "image": "triangle"}]
+		{"type": "Asm_Data", "level": "demo", "task": "Add single digits no carry", "dataset": [2,2,4], "operation": "+", "image": "triangle"}]
 
 }

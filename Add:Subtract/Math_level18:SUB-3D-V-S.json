@@ -1,0 +1,66 @@
+{
+	"bootFeatures": "FTR_DEMO_SUB",
+
+	"datasource": [
+	
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [477,131,346], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [689,163,526], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [759,321,438], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [795,765,30], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [629,225,404], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [735,625,110], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [249,232,17], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [655,344,311], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [493,191,302], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [597,521,76], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [668,252,416], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [798,764,34], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [324,311,13], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [577,167,410], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [263,132,131], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [485,310,175], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [487,342,145], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [249,246,3], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [796,446,350], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [548,207,341], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [396,203,193], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [762,361,401], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [676,634,42], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [667,322,345], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [260,120,140], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [597,360,237], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [479,402,77], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [589,262,327], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [784,343,441], "operation": "-", "image": "star"},
+
+		{"type": "Asm_Data", "level": "demo", "task": "Subtract triple digits no Borrow", "dataset": [265,100,165], "operation": "-", "image": "star"}]
+
+}
