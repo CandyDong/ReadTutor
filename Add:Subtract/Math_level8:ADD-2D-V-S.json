@@ -3,64 +3,64 @@
 
 	"datasource": [
 	
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [52,44,96], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [63,35,98], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [22,23,45], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [55,22,77], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [20,74,94], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [60,16,76], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [15,14,29], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [51,31,82], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [60,36,96], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [42,12,54], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [51,42,93], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [27,20,47], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [57,32,89], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [20,31,51], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [30,46,76], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [73,14,87], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [12,40,52], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [30,38,68], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [58,20,78], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [68,20,88], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [23,21,44], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [45,24,69], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [65,20,85], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [80,18,98], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [23,46,69], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [61,30,91], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [30,38,68], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [25,20,45], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"},
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [32,66,98], "operation": "+", "image": "triangle"},
 
-		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [36, 40, 27, 56, 34, 78, 19, 52, 49, 48, 50, 58, 13, 38, 77, 15, 45, 73, 66, 60, 37, 59, 41, 23, 31, 16, 28, 14, 75, 69, 67, 64, 35, 51, 22, 30, 80, 62, 39, 71, 12, 57, 47, 18, 46, 11, 74, 68, 21, 72, 61, 33, 10, 32, 25, 20, 26, 29, 55, 44, 54, 24, 53, 63, 42, 76, 79, 65, 70, 43, 17], "operation": "+", "image": "triangle"}]
+		{"type": "Asm_Data", "level": "demo", "task": "Add double digits no carry", "dataset": [45,51,96], "operation": "+", "image": "triangle"}]
 
 }

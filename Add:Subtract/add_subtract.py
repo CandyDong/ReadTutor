@@ -35,6 +35,38 @@ def read_spreadsheet(excel_path):
 
 
 
+def num_digit(number):
+	if number == 0: return 1
+	digit_num = 0
+	while number > 0:
+		digit_num += 1
+		number //= 10
+	return digit_num
+
+
+
+#check no carry/no borrow
+def isValidOperation(operand1, operand2, operation):
+	digit_num = num_digit(operand1)
+	operand1 = str(operand1)
+	operand2 = str(operand2)
+	if operation == "+":
+		for index in range(digit_num):
+			digit1 = int(operand1[index])
+			digit2 = int(operand2[index])
+			if (digit1 + digit2) > 9:
+				return False
+		return True
+	else:
+		for index in range(digit_num):
+			digit1 = int(operand1[index])
+			digit2 = int(operand2[index])
+			if digit1 < digit2:
+				return False
+		return True
+
+
+
 def write_file(filename, content_dic):
 	with open(filename, 'w') as file_descriptor:
 
@@ -69,23 +101,34 @@ def write_file(filename, content_dic):
 		#get dataset
 		minValue = int(float(content_dic['MinValue']))
 		maxValue = int(float(content_dic['MaxValue']))
-		offset = content_dic['Offset']
+		if content_dic['Offset'] != "within":
+			offset = int(float(int(float(content_dic['Offset']))))
 
 		#increasing/decreasing
 		seq_str = content_dic['Increasing/Decreasing/Random']
 		if seq_str == "Increasing":
-			data_array = range(minValue, maxValue+1, int(float(offset)))
-		else if seq_str == "Decreasing":
-			data_array = range(minValue, maxValue+1, -int(float(offset)))
+			data_array = range(minValue, maxValue+1, offset)
+		elif seq_str == "Decreasing":
+			data_array = range(maxValue, minValue-1, -offset)
 		else:
-			##########################need to be fixed#########################
 			data_array = []
-			for limit in range(minValue, maxValue, int(float(offset))):
-				rand_num = random.randint(limit, limit+int(float(offset)))
-				data_array.extend([rand_num])
+			#minValue is a 3-digit number
+			if minValue//100 != 0: 
+				offset = 100
+			#minValue is a 2-digit number
+			elif minValue//10 != 0: 
+				offset = 10
+			else: 
+				offset = 1
+			for limit in range(minValue, maxValue+1, offset):
+				data_array.append(limit)
+			print("random data_array is: ", data_array)
 
 		#construct data set from all data array
 		data_set = []
+		#number of data set needed
+		quest_num = int(float(content_dic['# questions']))
+		array_length = len(data_array)
 		if "Count" in task_str: 
 			if "up" in task_str:
 				operand2 = int(float(offset))
@@ -94,24 +137,35 @@ def write_file(filename, content_dic):
 			for data in data_array:
 				operand1 = data
 				operand3 = operand1 + operand2
-			 	data_set.extend([operand1, operand2, operand3])
+			 	data_set.append([str(operand1), str(abs(operand2)), str(operand3)])
+			print("ordered data_set is: ", data_set)
 		else:
-			##########################need to be fixed#########################
-			if 'Add' in content_dic['Add/subtract']:
-				for data in data_array:
-					operand1 = data
-					operand2 = 
-					operand3 = operand1 + operand2
-				 	data_set.extend([operand1, operand2, operand3])
+			#find two operands with which addition/subtraction does not involve carry
+			#and in different range
+			while(True):
+				if (len(data_set) >= quest_num):
+					print("length of data set is: ", len(data_set))
+					break
+				i = random.randint(0, array_length-2)
+				operand1 = random.randint(data_array[i], data_array[i+1])
+				j = random.randint(0, array_length-2)
+				operand2 = random.randint(data_array[j], data_array[j+1])
+				if 'Add' in content_dic['Add/subtract']:
+					if isValidOperation(operand1, operand2, "+"):
+						print("valid add")
+						operand3 = operand1 + operand2
+						data_set.append([str(operand1), str(operand2), str(operand3)])
+				else:
+					if isValidOperation(operand1, operand2, "-"):
+						print("valid sub")
+						operand3 = operand1 - operand2
+		 				data_set.append([str(operand1), str(operand2), str(operand3)])
 
-
-
-					
-
+			print("random data_set is: ", data_set)
 
 		#construct each row in datasouce
-		quest_num = int(float(content_dic['# questions']))
 		for quest_index in range(0, quest_num):
+			print("quest_index is: ", quest_index)
 			result_str += fixed_str
 
 			#task
@@ -119,7 +173,9 @@ def write_file(filename, content_dic):
 
 
 			#dataset
-			result_str += '\"dataset\": ' + str(data_array) + ', '
+			cur_data_set = data_set[quest_index]
+			print("cur_data_set is: ", cur_data_set, "\n")
+			result_str += '\"dataset\": [' + ','.join(cur_data_set) + '], '
 
 			#operation
 			result_str += '\"operation\": ' + operation_str + ', '
