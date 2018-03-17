@@ -1,0 +1,6 @@
+write.num:level1.json
+write.num.dic:leve2.json
+write.num:level3.json
+write.num.dic:leve4.json
+write.num:level5.json
+write.num.dic:leve6.json

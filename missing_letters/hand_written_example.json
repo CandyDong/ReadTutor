@@ -1,0 +1,20 @@
+{
+	"dataType": "CWr_Data",
+
+	"singleStimulus": true,
+
+	"dataSource": [
+
+    { 
+      "stimulus": "n_",
+      "audioStimulus": "na.mp3",
+      "answer": "a"
+    },
+
+    { "stimulus": "many_ya",
+      "audioStimulus": "manyoya.mp3",
+   	  "answer": "o"
+   	}
+
+	]
+}
