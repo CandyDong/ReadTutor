@@ -1,7 +1,7 @@
 {
 	"bootFeatures": "FTR_DEMO_ADD",
 
-	"datasource": [
+	"dataSource": [
 	
 		{"type": "Asm_Data", "level": "demo", "task": "Count up by 1", "dataset": [0,1,1], "operation": "+", "image": "pentagon"},
 

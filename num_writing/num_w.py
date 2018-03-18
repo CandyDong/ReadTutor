@@ -41,7 +41,7 @@ def write_file(filename, content_dic):
 		else:
 			result_str += '\"random\": true,\n\t'
 
-		result_str += '\"datasource\": ['
+		result_str += '\"dataSource\": ['
 		for num in range(0,10):
 			result_str += '\"'
 			result_str += str(num)
@@ -59,29 +59,33 @@ def write_file(filename, content_dic):
 def main():
 	#there should be only one command line argument 
 	#(not counting the program itself)
-	if len(sys.argv) != 3:
+	if len(sys.argv) != 2:
 		print("Wrong number of cmd args!")
 
-	excel_path = sys.argv[2]
+	excel_path = sys.argv[1]
 	with open_workbook(excel_path,'r') as excel_file:
 		content_list = read_spreadsheet(excel_file)
 
-	txt_path = sys.argv[1]
-	#loop through the file names
-	with open(txt_path, 'r') as txt_file:
-		for line in txt_file:
-			filename = line[:-1] #eliminate '\n'
+	for content_dic in content_list:
+		filename = content_dic['Name']
+		write_file(filename, content_dic)
 
-			#find the attribute dic for this specific file
-			for content_dic in content_list:
-				radix_index = content_dic['Level'].index('.')
-				level_str = content_dic['Level'][:radix_index]
+	# txt_path = sys.argv[1]
+	# #loop through the file names
+	# with open(txt_path, 'r') as txt_file:
+	# 	for line in txt_file:
+	# 		filename = line[:-1] #eliminate '\n'
 
-				if level_str in filename:
-					write_file(filename, content_dic)
-					break
+	# 		#find the attribute dic for this specific file
+	# 		for content_dic in content_list:
+	# 			radix_index = content_dic['Level'].index('.')
+	# 			level_str = content_dic['Level'][:radix_index]
+
+	# 			if level_str in filename:
+	# 				write_file(filename, content_dic)
+	# 				break
 
 
 
 if __name__ == '__main__':
-    main()
+	main()

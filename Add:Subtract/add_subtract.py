@@ -91,7 +91,7 @@ def write_file(filename, content_dic):
         else:
             operation_str = '\"' + "-" '\"'
 
-        result_str += '\"datasource\": [\n\t'
+        result_str += '\"dataSource\": [\n\t'
 
         #get the task field
         task_str = '\"' + content_dic['Description'] + '\"'
@@ -137,6 +137,8 @@ def write_file(filename, content_dic):
             for data in data_array:
                 operand1 = data
                 operand3 = operand1 + operand2
+                if [str(operand1), str(abs(operand2)), str(operand3)] in data_set:
+                    continue
                 data_set.append([str(operand1), str(abs(operand2)), str(operand3)])
         else:
             #find two operands with which addition/subtraction does not involve carry
@@ -190,10 +192,10 @@ def write_file(filename, content_dic):
 def main():
     #there should be only one command line argument 
     #(not counting the program itself)
-    if len(sys.argv) != 3:
+    if len(sys.argv) != 2:
         print("Wrong number of cmdline args!!")
 
-    excel_path = sys.argv[2]
+    excel_path = sys.argv[1]
     content_list = read_spreadsheet(excel_path)
 
     for content_dic in content_list:
