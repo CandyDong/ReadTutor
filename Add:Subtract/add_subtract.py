@@ -138,7 +138,7 @@ def write_file(filename, content_dic):
                 operand1 = data
                 operand3 = operand1 + operand2
                 if [str(operand1), str(abs(operand2)), str(operand3)] in data_set:
-                    continue
+                    continue #no repeated data in data_set
                 data_set.append([str(operand1), str(abs(operand2)), str(operand3)])
         else:
             #find two operands with which addition/subtraction does not involve carry
