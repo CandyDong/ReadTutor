@@ -43,7 +43,6 @@ def read_narration(narration_folder_path, narration_txt_path):
 			result_str += filename
 			result_str += "\n"
 		narration_txt.write(result_str)
-	
 
 
 		
