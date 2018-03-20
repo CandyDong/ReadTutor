@@ -9,8 +9,8 @@ def read_spreadsheet(excel_path):
             if sheet.name == "Candy - Add Subtract": 
                 row_num = sheet.nrows
                 col_num = sheet.ncols
-                content_list = []
-                content_class = []
+                part_list = []
+                part_class = []
 
                 for row in range(row_num):
                     #dic for a specific column(a number writing file)
@@ -19,19 +19,19 @@ def read_spreadsheet(excel_path):
                     for col in range(col_num):
 
                         if row == 0: 
-                            content_class.append(str(sheet.cell(row,col).value))
+                            part_class.append(str(sheet.cell(row,col).value))
                             #['Level', 'MinValue', 'MaxValue', 'Offset', 'Domain', 
                             #'KC', 'Increasing/Decreasing/Random', 'Shape', 'Demo', 
                             #'Add/subtract', 'Description', 'Name', '# questions']
                             continue
 
-                        col_dic[content_class[col]] = str(sheet.cell(row,col).value)
+                        col_dic[part_class[col]] = str(sheet.cell(row,col).value)
 
-                    if col_dic != {}: content_list.append(col_dic)
-                # print(content_list)
+                    if col_dic != {}: part_list.append(col_dic)
+                # print(part_list)
                 break
 
-    return content_list
+    return part_list
 
 
 
@@ -153,97 +153,93 @@ def write_info_data(info_path, data_path):
 
 
 
-
-def make_blank(word, content):
-	index_start = word.find(content)
-	index_end = index_start + len(content)
-	word_blank = word[:index_start] + "_" * len(content) + word[index_end:] 
+def make_blank(word, part, index_start):
+	index_end = index_start + len(part)
+	word_blank = word[:index_start] + "_" * len(part) + word[index_end:] 
 	return word_blank
 
 
 
-
-def make_string(word, content, level):
-	word_blank = make_blank(word, letter)
+def make_string(word, part, index_start, level):
+	word_blank = make_blank(word, part, index_start)
 	return "level" + str(level) + "   " + word + "   " + word_blank + "\n"
+
 
 
 #difficulty factors:
 #(1). Word Length
-#(2). #missing letters: 1 < 2 < 3 < 4
+#(2). Word frequency (common / rare but >2x)
+#(3). #missing letters: 1 < 2 < 3 < 4
 # Type:  vowel < consonant; syllable < cluster (ends with vowel < ends with consonant)
-#(3). Position of missing letter(s): initial / final / medial
-#(4). Word frequency (common / rare but >2x)
+#(4). Position of missing letter(s): initial / final / medial
 def generate_problems(word_path, problem_path, data_path):
-	#loop through all the words in word_data_path
-	with open(word_path, "r") as word_file:
-		syllable_file = open(data_path[0], 'r')
-		consonant_file = open(data_path[1], 'r')
-		storyword_file = open(data_path[2], 'r')
+	word_file = open(word_path, 'r')
+	syllable_file = open(data_path[0], 'r')
+	consonant_file = open(data_path[1], 'r')
+	storyword_file = open(data_path[2], 'r')
+	problem_file = open(problem_path, 'w')
 
-		result_str = ""
-		word_list = []
-		syllable_list = []
-		consonant_list = []
-		storyword_list = []
-		level = 0
+	result_str = ""
+	word_list = []
+	syllable_list = []
+	consonant_list = []
+	storyword_list = []
+	level = 0
 
-		#all data sorted by length
-		for line in word_file:
-			word_list.append(line[:-1])
-		word_list.sort(key=len)
+	#all data sorted by length
+	for line in syllable_file:
+		syllable_list.append(line[:-1])
+	syllable_file.close()
+	syllable_list.sort(key=len)
 
-		#all data sorted by length
-		for line in syllable_file:
-			syllable_list.append(line[:-1])
-		syllable_list.sort(key=len)
+	#all data sorted by length
+	for line in consonant_file:
+		consonant_list.append(line[:-1])
+	consonant_file.close()
+	consonant_list.sort(key=len)
 
-		#all data sorted by length
-		for line in consonant_file:
-			consonant_list.append(line[:-1])
-		consonant_list.sort(key=len)
+	#all data sorted by frequency originally 
+	for line in storyword_file:
+		storyword_line_list = line.split(" ")
+		storyword_list.append(storyword_line_list[0])
+	storyword_file.close()
 
-		#all data sorted by frequency
-		for line in storyword_file:
-			storyword_line_list = line.split(" ")
-			storyword_list.append(storyword_line_list[0])
-		
+	#all data sorted by length and then frequency as specified in storyword
+	for line in word_file:
+		word = line[:-1]
+		#eliminate those that are not in the storyword list
+		if not (word in storyword_list):
+			continue
+		word_list.append(word)
+	word_file.close()
+	storyword_list_reverse = list(reversed(storyword_list))
+	word_list.sort(key=lambda w: [len(w),storyword_list_reverse.index(w)])
+	
+	for word in word_list:
+		#number of missing letters
+		for missing_num in range(1, len(word)+1):
+			for start_index in range(0, len(word)):
+				if (start_index + missing_num) > len(word):
+					break
+				part = word[start_index : (start_index+missing_num)]
+				
+				#loop through consonant_list and syllables_list
+				#for part of same length consonants have higher difficulty levels
+				for syllable in syllable_list:
+					if syllable == part:
+						level += 1
+						result_str += make_string(word, part, start_index, level)
+				for consonant in consonant_list:
+					if consonant == part:
+						level += 1
+						result_str += make_string(word, part, start_index, level)
 
-		for word in word_list:
-			print(word)
-			#number of missing letters
-			for missing_num in range(1, len(word)+1):
-				for start_index in range(0, len(word)):
-					if (start_index + missing_num) > len(word):
-						break
-					phrase = word[start_index : (start_index+missing_num)]
-					print(phrase)
-		return
-					
-
-
-			# for letter in word:
-			# 	for consonant in consonant_file:
-			# 		if len(consonant) > 1:
-			# 			break
-			# 		if consonant in word:
-			# 			level += 1
-			# 			result_str += make_string(word, letter, level)
-
-			# 	if letter in vowels:
-			# 		level += 1
-			# 		result_str += make_string(word, letter, level)
-
-		
-
-
-		return
-					
+	problem_file.write(result_str)
+	problem_file.close()
+	return
+			
 
 				
-
-				
-		
 #sys.argv[1] = path of txt file which contains all data source names
 def main():
     #there should be only one command line argument 
@@ -252,7 +248,7 @@ def main():
         print("Wrong number of cmdline args!!")
 
     excel_path = sys.argv[1]
-    content_list = read_spreadsheet(excel_path)
+    part_list = read_spreadsheet(excel_path)
 
     audio_path = "./narration"
     word_data_path = ".word_data.txt"
@@ -265,7 +261,7 @@ def main():
     data_path = [syllable_path, consonant_path, storyword_path]
     write_info_data(info_path, data_path)
 
-    problem_path = "./problems.xlsx"
+    problem_path = "./problems.txt"
     generate_problems(word_data_path, problem_path, data_path)
 
 if __name__ == '__main__':
