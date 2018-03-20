@@ -93,24 +93,6 @@ def read_narration(audio_path, word_data_path):
 
 
 
-
-#difficulty factors:
-#(1). #missing letters: 1 < 2 < 3 < 4
-# Type:  vowel < consonant; syllable < cluster (ends with vowel < ends with consonant)
-#(2). Word Length
-#(3). Position of missing letter(s): initial / final / medial
-#(4). Word frequency (common / rare but >2x)
-def generate_problems(data_path, problem_path):
-	#loop through all the words in word_data_path
-	with open(data_path, "r") as data_file:
-		for word in data_file:
-			#number of missing letters
-			#starts from 1
-			for letter in word:
-				return
-
-
-
 def write_info_data(info_path, data_path):
 	with open_workbook(info_path, 'r') as info_file:
 		#find the spreadsheet for
@@ -135,37 +117,132 @@ def write_info_data(info_path, data_path):
 				syllable_file = open(data_path[0], 'w')
 				syllable_file.write(syllable_data)
 				syllable_file.close()
-		return
 
+			if "consonant" in sheet.name:
+				consonant_data = ""
+				for row in range(row_num):
+					if row < 1:
+						continue
+					consonant_value = sheet.cell(row,0).value
+					consonant_data += str(consonant_value)
+					consonant_data += "\n"
+				consonant_file = open(data_path[1], 'w')
+				consonant_file.write(consonant_data)
+				consonant_file.close()
+
+			if "story words" in sheet.name:
+				story_data = ""
+				for row in range(row_num):
+					if row < 1 :
+						continue
+					story_word_value = sheet.cell(row,0).value
+					story_freq_value = int(sheet.cell(row,2).value)
+					story_data += str(story_word_value)
+					story_data += " "
+					story_data += str(story_freq_value)
+					story_data += " "
+
+					if story_freq_value > 4:
+						story_data += "common"
+					else:
+						story_data += "rare"
+					story_data += "\n"
+				story_file = open(data_path[2], 'w')
+				story_file.write(story_data)
+				story_file.close()
+
+
+
+
+def make_blank(word, content):
+	index_start = word.find(content)
+	index_end = index_start + len(content)
+	word_blank = word[:index_start] + "_" * len(content) + word[index_end:] 
+	return word_blank
+
+
+
+
+def make_string(word, content, level):
+	word_blank = make_blank(word, letter)
+	return "level" + str(level) + "   " + word + "   " + word_blank + "\n"
+
+
+#difficulty factors:
+#(1). Word Length
+#(2). #missing letters: 1 < 2 < 3 < 4
+# Type:  vowel < consonant; syllable < cluster (ends with vowel < ends with consonant)
+#(3). Position of missing letter(s): initial / final / medial
+#(4). Word frequency (common / rare but >2x)
+def generate_problems(word_path, problem_path, data_path):
+	#loop through all the words in word_data_path
+	with open(word_path, "r") as word_file:
+		syllable_file = open(data_path[0], 'r')
+		consonant_file = open(data_path[1], 'r')
+		storyword_file = open(data_path[2], 'r')
+
+		result_str = ""
+		word_list = []
+		syllable_list = []
+		consonant_list = []
+		storyword_list = []
+		level = 0
+
+		#all data sorted by length
+		for line in word_file:
+			word_list.append(line[:-1])
+		word_list.sort(key=len)
+
+		#all data sorted by length
+		for line in syllable_file:
+			syllable_list.append(line[:-1])
+		syllable_list.sort(key=len)
+
+		#all data sorted by length
+		for line in consonant_file:
+			consonant_list.append(line[:-1])
+		consonant_list.sort(key=len)
+
+		#all data sorted by frequency
+		for line in storyword_file:
+			storyword_line_list = line.split(" ")
+			storyword_list.append(storyword_line_list[0])
+		
+
+		for word in word_list:
+			print(word)
+			#number of missing letters
+			for missing_num in range(1, len(word)+1):
+				for start_index in range(0, len(word)):
+					if (start_index + missing_num) > len(word):
+						break
+					phrase = word[start_index : (start_index+missing_num)]
+					print(phrase)
+		return
+					
+
+
+			# for letter in word:
+			# 	for consonant in consonant_file:
+			# 		if len(consonant) > 1:
+			# 			break
+			# 		if consonant in word:
+			# 			level += 1
+			# 			result_str += make_string(word, letter, level)
+
+			# 	if letter in vowels:
+			# 		level += 1
+			# 		result_str += make_string(word, letter, level)
 
 		
 
-            # if sheet.name == "Candy - Add Subtract": 
-            #     row_num = sheet.nrows
-            #     col_num = sheet.ncols
-            #     content_list = []
-            #     content_class = []
 
-            #     for row in range(row_num):
-            #         #dic for a specific column(a number writing file)
-            #         col_dic = {} 
+		return
+					
 
-            #         for col in range(col_num):
+				
 
-            #             if row == 0: 
-            #                 content_class.append(str(sheet.cell(row,col).value))
-            #                 #['Level', 'MinValue', 'MaxValue', 'Offset', 'Domain', 
-            #                 #'KC', 'Increasing/Decreasing/Random', 'Shape', 'Demo', 
-            #                 #'Add/subtract', 'Description', 'Name', '# questions']
-            #                 continue
-
-            #             col_dic[content_class[col]] = str(sheet.cell(row,col).value)
-
-            #         if col_dic != {}: content_list.append(col_dic)
-            #     # print(content_list)
-            #     break
-
-
+				
 		
 #sys.argv[1] = path of txt file which contains all data source names
 def main():
@@ -182,15 +259,14 @@ def main():
     read_narration(audio_path, word_data_path)
 
     info_path = "./7181_swahili_story_words_Swahili_syllable_and_consonant_statistics.xlsx"
-    syllable_path = "./syllable.txt"
+    syllable_path = "./syllable.txt" 
     consonant_path = "./consonant.txt"
     storyword_path = "./storyword.txt"
     data_path = [syllable_path, consonant_path, storyword_path]
     write_info_data(info_path, data_path)
 
-    return
     problem_path = "./problems.xlsx"
-    generate_problems(word_data_path, problem_path)
+    generate_problems(word_data_path, problem_path, data_path)
 
 if __name__ == '__main__':
     main()
