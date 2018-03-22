@@ -2,6 +2,7 @@ from xlrd import open_workbook
 import xlwt
 import sys, os, random
 
+#temporaty placeholder
 def read_spreadsheet(excel_path):
     with open_workbook(excel_path,'r') as excel_descriptor:
         for sheet in excel_descriptor.sheets():
@@ -40,6 +41,7 @@ def read_spreadsheet(excel_path):
 def read_narration(audio_path, word_data_path):
 	#store all the names of narration folders
 	narration_folder_names = []
+
 	for narration_folder in os.listdir(audio_path):
 		if narration_folder == '.DS_Store':
 			continue
@@ -53,7 +55,9 @@ def read_narration(audio_path, word_data_path):
 		result_str = ""
 		for folder in narration_folder_names:
 			folder_path = audio_path + "/" + folder
-			print(folder_path)
+
+			print("scanning recorded words in %s" % folder_path)
+
 			for filename in os.listdir(folder_path):
 
 				#eliminate files that are not mp3 or wav
@@ -86,6 +90,9 @@ def read_narration(audio_path, word_data_path):
 				
 				if filename[:suffix_index] in result_str:
 					continue
+
+				print(filename)
+
 				result_str += filename
 				result_str += "\n"
 			
@@ -251,7 +258,7 @@ def main():
     part_list = read_spreadsheet(excel_path)
 
     audio_path = "./narration"
-    word_data_path = ".word_data.txt"
+    word_data_path = "./word_data.txt"
     read_narration(audio_path, word_data_path)
 
     info_path = "./7181_swahili_story_words_Swahili_syllable_and_consonant_statistics.xlsx"
