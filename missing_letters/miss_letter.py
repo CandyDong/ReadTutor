@@ -91,12 +91,44 @@ def read_narration(audio_path, word_data_path):
 				if filename[:suffix_index] in result_str:
 					continue
 
-				print(filename)
+				#print(filename)
 
 				result_str += filename
 				result_str += "\n"
 			
 		word_data_file.write(result_str)
+
+
+#loop through story word
+#calculate total appearance of words that contain the consonant
+#filter out those have frequence less than or equal to 5
+def filter_low_freq(part_path, new_part_path, story_path):
+	new_str = ""
+	with open(new_part_path, 'w') as new_part_file:
+		with open(part_path, 'r') as part_file:
+
+			print("filter low frequency parts in %s" % part_path)
+
+			for part_line in part_file:
+				part = part_line[:-1] #"\n"
+
+				freq_sum = 0
+				with open(story_path, 'r') as story_file:
+					for story_line in story_file:
+						storyword_line_list = story_line.split(" ")
+						word = storyword_line_list[0]
+						freq = int(storyword_line_list[1])
+
+						if part in word:
+							freq_sum += freq
+							if freq_sum > 5:
+								#write this word into the new file
+								break
+
+					if freq_sum > 5:
+						new_str += str(part_line)
+
+		new_part_file.write(new_str)
 
 
 
@@ -112,20 +144,26 @@ def write_info_data(info_path, data_path):
 			col_num = sheet.ncols
 
 			if "syllable" in sheet.name:
+
+				print("write data in %s" % data_path[0])
+
 				syllable_data = ""
 				for row in range(row_num):
 					if row < 2: 
 						continue
-					syllable_value = sheet.cell(row,7).value
+					syllable_value = sheet.cell(row,7).value #197 swahili word starts from column 7
 					if syllable_value == "":
 						continue
-					syllable_data += str(syllable_value) #197 swahili word starts from column 7
+					syllable_data += str(syllable_value) 
 					syllable_data += "\n"
 				syllable_file = open(data_path[0], 'w')
 				syllable_file.write(syllable_data)
 				syllable_file.close()
 
 			if "consonant" in sheet.name:
+
+				print("write data in %s" % data_path[1])
+
 				consonant_data = ""
 				for row in range(row_num):
 					if row < 1:
@@ -138,18 +176,36 @@ def write_info_data(info_path, data_path):
 				consonant_file.close()
 
 			if "story words" in sheet.name:
+
+				print("write data in %s" % data_path[2])
+
 				story_data = ""
 				for row in range(row_num):
 					if row < 1 :
 						continue
+
 					story_word_value = sheet.cell(row,0).value
 					story_freq_value = int(sheet.cell(row,2).value)
+
+					#do not include story words that have frequence <= 3 
+					#(might be English words)
+					if story_freq_value <= 3:
+						continue
+					
+					#Swahili words end with a vowel virtually always.
+					#filter out those end with a consonant
+					#eg. of, oh.
+					end_letter = story_word_value[-1];
+					if end_letter not in ['a','e','i','o','u']:
+						continue 
+
 					story_data += str(story_word_value)
 					story_data += " "
 					story_data += str(story_freq_value)
 					story_data += " "
 
-					if story_freq_value > 4:
+					#temprary "common/rare" cutoff 20 can be changed later
+					if story_freq_value > 20:
 						story_data += "common"
 					else:
 						story_data += "rare"
@@ -214,9 +270,11 @@ def generate_problems(word_path, problem_path, data_path):
 	#all data sorted by length and then frequency as specified in storyword
 	for line in word_file:
 		word = line[:-1]
+
 		#eliminate those that are not in the storyword list
 		if not (word in storyword_list):
 			continue
+
 		word_list.append(word)
 	word_file.close()
 	storyword_list_reverse = list(reversed(storyword_list))
@@ -265,8 +323,13 @@ def main():
     syllable_path = "./syllable.txt" 
     consonant_path = "./consonant.txt"
     storyword_path = "./storyword.txt"
+    filtered_consonant_path = "./consonant_filtered.txt"
+    filtered_syllable_path = "./syllable_filtered.txt"
     data_path = [syllable_path, consonant_path, storyword_path]
     write_info_data(info_path, data_path)
+    filter_low_freq(consonant_path, filtered_consonant_path, storyword_path)
+    filter_low_freq(syllable_path, filtered_syllable_path, storyword_path)
+    data_path = [filtered_syllable_path, filtered_consonant_path, storyword_path]
 
     problem_path = "./problems.txt"
     generate_problems(word_data_path, problem_path, data_path)
