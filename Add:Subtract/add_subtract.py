@@ -161,6 +161,7 @@ def write_file(filename, content_dic):
 
         #construct each row in datasouce
         for quest_index in range(0, quest_num):
+            print(quest_index)
             result_str += fixed_str
 
             #task
