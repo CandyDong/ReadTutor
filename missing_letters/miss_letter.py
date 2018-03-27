@@ -4,35 +4,33 @@ import sys, os, random
 
 #temporaty placeholder
 def read_spreadsheet(excel_path):
-    with open_workbook(excel_path,'r') as excel_descriptor:
-        for sheet in excel_descriptor.sheets():
+	with open_workbook(excel_path,'r') as excel_descriptor:
+		for sheet in excel_descriptor.sheets():
+			row_num = sheet.nrows
+			col_num = sheet.ncols
+			level_list = []
+			part_class = []
 
-            if sheet.name == "Candy - Add Subtract": 
-                row_num = sheet.nrows
-                col_num = sheet.ncols
-                part_list = []
-                part_class = []
+			for row in range(row_num):
+				#dic for a specific column(a number writing file)
+				col_dic = {} 
 
-                for row in range(row_num):
-                    #dic for a specific column(a number writing file)
-                    col_dic = {} 
+				for col in range(col_num):
 
-                    for col in range(col_num):
+					if row == 0: 
+						part_class.append(str(sheet.cell(row,col).value))
+						#['Name', 'Level', '# Missing Letters', 'Word Length', 
+						#'Position', 'Pronunciation', 'Word Frequency', 
+						#'Stimulus Representation', 'Answer Representation']
+						continue
 
-                        if row == 0: 
-                            part_class.append(str(sheet.cell(row,col).value))
-                            #['Level', 'MinValue', 'MaxValue', 'Offset', 'Domain', 
-                            #'KC', 'Increasing/Decreasing/Random', 'Shape', 'Demo', 
-                            #'Add/subtract', 'Description', 'Name', '# questions']
-                            continue
+					col_dic[part_class[col]] = str(sheet.cell(row,col).value)
 
-                        col_dic[part_class[col]] = str(sheet.cell(row,col).value)
+				if col_dic != {}: level_list.append(col_dic)
+			
+			break
 
-                    if col_dic != {}: part_list.append(col_dic)
-                # print(part_list)
-                break
-
-    return part_list
+	return level_list
 
 
 
@@ -223,9 +221,9 @@ def make_blank(word, part, index_start):
 
 
 
-def make_string(word, part, index_start, level):
+def make_string(word, part, index_start, level, token, freq_level):
 	word_blank = make_blank(word, part, index_start)
-	return "level" + str(level) + "   " + word + "   " + word_blank + "\n"
+	return word + " " + word_blank + " " + str(len(part)) + " " + token + " " + freq_level + "\n"
 
 
 
@@ -262,8 +260,10 @@ def generate_problems(word_path, problem_path, data_path):
 	consonant_list.sort(key=len)
 
 	#all data sorted by frequency originally 
+	storyword_line_list_list = []
 	for line in storyword_file:
 		storyword_line_list = line.split(" ")
+		storyword_line_list_list.append(storyword_line_list)
 		storyword_list.append(storyword_line_list[0])
 	storyword_file.close()
 
@@ -286,53 +286,163 @@ def generate_problems(word_path, problem_path, data_path):
 			for start_index in range(0, len(word)):
 				if (start_index + missing_num) > len(word):
 					break
+				if missing_num == len(word):
+					break
 				part = word[start_index : (start_index+missing_num)]
-				
+
+				#word_freq
+				#eliminate '\n'
+				freq_level = storyword_line_list_list[storyword_list.index(word)][2][:-1] 
+
 				#loop through consonant_list and syllables_list
 				#for part of same length consonants have higher difficulty levels
 				for syllable in syllable_list:
 					if syllable == part:
 						level += 1
-						result_str += make_string(word, part, start_index, level)
+						result_str += make_string(word, part, start_index, level, 'vowel', freq_level)
 				for consonant in consonant_list:
 					if consonant == part:
 						level += 1
-						result_str += make_string(word, part, start_index, level)
+						result_str += make_string(word, part, start_index, level, 'consonant', freq_level)
 
 	problem_file.write(result_str)
 	problem_file.close()
 	return
 			
 
+
+def generate_data(level_list, problem_path):
+	with open(problem_path, "r") as problem_file:
+		#['Name', 'Level', '# Missing Letters', 'Word Length', 
+		#'Position', 'Pronunciation', 'Word Frequency', 
+		#'Stimulus Representation', 'Answer Representation']
+
+		#list for all selected words and their file path (2D list)
+		word_list = []
+		#list for all parts of one row in problem_file
+		problem_list = []
+		
+		for level in level_list:
+			print("\n")
+			
+			json_path = level['Name']
+			num_miss = int(float(level['# Missing Letters']))
+			word_len = int(float(level['Word Length']))
+			part_pos = level['Position']
+			pronu = level['Pronunciation']
+			freq = level['Word Frequency']
+
+			print("Finding problem for level %s" % level['Level'])
+			print(level)
+
+			#loop through problem.txt to find an appropriate word
+			#word word_blank len(part) token freq_level
+			for line in problem_file:
+
+				print("Checking problem %s" % line[:-1])
+
+				problem_list = line.split(" ")
+				#check word length
+				prob_intact = problem_list[0]
+				if len(prob_intact) != word_len:
+					if len(prob_intact) > word_len:
+						print("no appropriate word exists!!")
+						break
+					print("invalid word length")
+					continue
+				print("Word length checked")
+
+				#check number of missing letters
+				prob_num_miss = problem_list[2]
+				if int(float(prob_num_miss)) != num_miss:
+					print("invalid number of missing letters")
+					continue
+				print("number of missing letters checked")
+
+				#check position of the missing part
+				prob_part = problem_list[1]
+				if part_pos == "initial":
+					if not prob_part.startswith("_"):
+						print("invalid part position")
+						continue
+				elif part_pos == "final":
+					if not prob_part.endswith("_"):
+						print("invalid part position")
+						continue
+				else:
+					if prob_part.startswith("_") or prob_part.endswith("_"):
+						print("invalid part position")
+						continue
+				print("part position checked")
+
+				#check pronunciation 
+				prob_pro = problem_list[3]
+				if pronu != prob_pro:
+					print("invalid pronunciation")
+					continue
+				print("pronunciation checked")
+
+				#check word frequency
+				prob_freq = problem_list[4]
+				if freq != prob_freq:
+					print("invalid word frequency")
+					continue
+				print("word frequency checked")
+
+				#check if word is repeated
+				for info_pair in word_list:
+					if prob_intact in info_pair:
+						print("repeated word")
+						continue
+
+				print("word passed!!")
+				word_list.append([prob_intact, json_path])
+				break
+
+
+		print(word_list)
+
+
+
+				
+
+
+
+
+
 				
 #sys.argv[1] = path of txt file which contains all data source names
 def main():
-    #there should be only one command line argument 
-    #(not counting the program itself)
-    if len(sys.argv) != 2:
-        print("Wrong number of cmdline args!!")
+	#there should be only one command line argument 
+	#(not counting the program itself)
+	if len(sys.argv) != 2:
+		print("Wrong number of cmdline args!!")
 
-    excel_path = sys.argv[1]
-    part_list = read_spreadsheet(excel_path)
+	audio_path = "./narration"
+	word_data_path = "./word_data.txt"
+	read_narration(audio_path, word_data_path)
 
-    audio_path = "./narration"
-    word_data_path = "./word_data.txt"
-    read_narration(audio_path, word_data_path)
+	info_path = "./7181_swahili_story_words_Swahili_syllable_and_consonant_statistics.xlsx"
+	syllable_path = "./syllable.txt" 
+	consonant_path = "./consonant.txt"
+	storyword_path = "./storyword.txt"
+	filtered_consonant_path = "./consonant_filtered.txt"
+	filtered_syllable_path = "./syllable_filtered.txt"
+	data_path = [syllable_path, consonant_path, storyword_path]
+	write_info_data(info_path, data_path)
+	filter_low_freq(consonant_path, filtered_consonant_path, storyword_path)
+	filter_low_freq(syllable_path, filtered_syllable_path, storyword_path)
+	data_path = [filtered_syllable_path, filtered_consonant_path, storyword_path]
 
-    info_path = "./7181_swahili_story_words_Swahili_syllable_and_consonant_statistics.xlsx"
-    syllable_path = "./syllable.txt" 
-    consonant_path = "./consonant.txt"
-    storyword_path = "./storyword.txt"
-    filtered_consonant_path = "./consonant_filtered.txt"
-    filtered_syllable_path = "./syllable_filtered.txt"
-    data_path = [syllable_path, consonant_path, storyword_path]
-    write_info_data(info_path, data_path)
-    filter_low_freq(consonant_path, filtered_consonant_path, storyword_path)
-    filter_low_freq(syllable_path, filtered_syllable_path, storyword_path)
-    data_path = [filtered_syllable_path, filtered_consonant_path, storyword_path]
+	problem_path = "./problems.txt"
+	generate_problems(word_data_path, problem_path, data_path)
 
-    problem_path = "./problems.txt"
-    generate_problems(word_data_path, problem_path, data_path)
+	###############generate JSON files###################### 
+	excel_path = sys.argv[1]
+	level_list = read_spreadsheet(excel_path) 
+	generate_data(level_list, problem_path)
+
+
 
 if __name__ == '__main__':
-    main()
+	main()
