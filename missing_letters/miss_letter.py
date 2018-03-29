@@ -319,9 +319,12 @@ def generate_data(level_list, problem_path):
 
 		#list for all selected words and their file path (2D list)
 		word_list = []
-		#list for all parts of one row in problem_file
+		#list for all problems in the file
 		problem_list = []
 		
+		for line in problem_file:
+				problem_list.append(line[:-1])
+
 		for level in level_list:
 			print("\n")
 			
@@ -337,13 +340,12 @@ def generate_data(level_list, problem_path):
 
 			#loop through problem.txt to find an appropriate word
 			#word word_blank len(part) token freq_level
-			for line in problem_file:
+			for problem in problem_list:
+				print("Checking problem %s" % problem)
 
-				print("Checking problem %s" % line[:-1])
-
-				problem_list = line.split(" ")
+				problem_part = problem.split(" ")
 				#check word length
-				prob_intact = problem_list[0]
+				prob_intact = problem_part[0]
 				if len(prob_intact) != word_len:
 					if len(prob_intact) > word_len:
 						print("no appropriate word exists!!")
@@ -353,14 +355,14 @@ def generate_data(level_list, problem_path):
 				print("Word length checked")
 
 				#check number of missing letters
-				prob_num_miss = problem_list[2]
+				prob_num_miss = problem_part[2]
 				if int(float(prob_num_miss)) != num_miss:
 					print("invalid number of missing letters")
 					continue
 				print("number of missing letters checked")
 
 				#check position of the missing part
-				prob_part = problem_list[1]
+				prob_part = problem_part[1]
 				if part_pos == "initial":
 					if not prob_part.startswith("_"):
 						print("invalid part position")
@@ -376,16 +378,16 @@ def generate_data(level_list, problem_path):
 				print("part position checked")
 
 				#check pronunciation 
-				prob_pro = problem_list[3]
+				prob_pro = problem_part[3]
 				if pronu != prob_pro:
 					print("invalid pronunciation")
 					continue
 				print("pronunciation checked")
 
 				#check word frequency
-				prob_freq = problem_list[4]
+				prob_freq = problem_part[4]
 				if freq != prob_freq:
-					print("invalid word frequency")
+					print("invalid word frequency ")
 					continue
 				print("word frequency checked")
 
