@@ -1,0 +1,112 @@
+{
+	"bootFeatures": "FTR_DEMO_MISSING_LTR",
+	"random": false,
+	"singleStimulus": true,
+	"dataSource": [
+		{
+			"stimulus": "__nunua",
+			"audioStimulus": ["kununua"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__nalazimika",
+			"audioStimulus": ["ninalazimika"],
+			"answer": "ni"
+		},
+		{
+			"stimulus": "__ligeuka",
+			"audioStimulus": ["niligeuka"],
+			"answer": "ni"
+		},
+		{
+			"stimulus": "__lizuia",
+			"audioStimulus": ["walizuia"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "__weza",
+			"audioStimulus": ["naweza"],
+			"answer": "na"
+		},
+		{
+			"stimulus": "__",
+			"audioStimulus": ["mi"],
+			"answer": "mi"
+		},
+		{
+			"stimulus": "__lichosema",
+			"audioStimulus": ["nilichosema"],
+			"answer": "ni"
+		},
+		{
+			"stimulus": "__kuwepo",
+			"audioStimulus": ["hakuwepo"],
+			"answer": "ha"
+		},
+		{
+			"stimulus": "__fungwa",
+			"audioStimulus": ["hufungwa"],
+			"answer": "hu"
+		},
+		{
+			"stimulus": "__ngelima",
+			"audioStimulus": ["wangelima"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "___upe",
+			"audioStimulus": ["nyeupe"],
+			"answer": "nye"
+		},
+		{
+			"stimulus": "__yatima",
+			"audioStimulus": ["mayatima"],
+			"answer": "ma"
+		},
+		{
+			"stimulus": "__rokeni",
+			"audioStimulus": ["torokeni"],
+			"answer": "to"
+		},
+		{
+			"stimulus": "__wawezi",
+			"audioStimulus": ["hawawezi"],
+			"answer": "ha"
+		},
+		{
+			"stimulus": "__mrudisha",
+			"audioStimulus": ["kumrudisha"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__jikokota",
+			"audioStimulus": ["kujikokota"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__arufu",
+			"audioStimulus": ["maarufu"],
+			"answer": "ma"
+		},
+		{
+			"stimulus": "___nda",
+			"audioStimulus": ["chanda"],
+			"answer": "cha"
+		},
+		{
+			"stimulus": "__sasi",
+			"audioStimulus": ["risasi"],
+			"answer": "ri"
+		},
+		{
+			"stimulus": "__kimchukulia",
+			"audioStimulus": ["wakimchukulia"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "__likia",
+			"audioStimulus": ["malikia"],
+			"answer": "ma"
+		}
+	]
+}

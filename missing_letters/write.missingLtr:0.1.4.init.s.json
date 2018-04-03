@@ -1,0 +1,112 @@
+{
+	"bootFeatures": "FTR_DEMO_MISSING_LTR",
+	"random": false,
+	"singleStimulus": true,
+	"dataSource": [
+		{
+			"stimulus": "__eeeeeee",
+			"audioStimulus": ["heeeeeeee"],
+			"answer": "he"
+		},
+		{
+			"stimulus": "__a",
+			"audioStimulus": ["kua"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__undu",
+			"audioStimulus": ["kiundu"],
+			"answer": "ki"
+		},
+		{
+			"stimulus": "__amba",
+			"audioStimulus": ["miamba"],
+			"answer": "mi"
+		},
+		{
+			"stimulus": "___mbo",
+			"audioStimulus": ["nyimbo"],
+			"answer": "nyi"
+		},
+		{
+			"stimulus": "__mhakikishia",
+			"audioStimulus": ["kumhakikishia"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "___ngine",
+			"audioStimulus": ["nyingine"],
+			"answer": "nyi"
+		},
+		{
+			"stimulus": "__taiva",
+			"audioStimulus": ["kitaiva"],
+			"answer": "ki"
+		},
+		{
+			"stimulus": "___rehe",
+			"audioStimulus": ["sherehe"],
+			"answer": "she"
+		},
+		{
+			"stimulus": "__sikitika",
+			"audioStimulus": ["nasikitika"],
+			"answer": "na"
+		},
+		{
+			"stimulus": "___fla",
+			"audioStimulus": ["ghafla"],
+			"answer": "gha"
+		},
+		{
+			"stimulus": "__jizamisha",
+			"audioStimulus": ["kujizamisha"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__kufanikiwa",
+			"audioStimulus": ["hakufanikiwa"],
+			"answer": "ha"
+		},
+		{
+			"stimulus": "__katwa",
+			"audioStimulus": ["kukatwa"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__bebula",
+			"audioStimulus": ["nebebula"],
+			"answer": "ne"
+		},
+		{
+			"stimulus": "__ngwani",
+			"audioStimulus": ["jangwani"],
+			"answer": "ja"
+		},
+		{
+			"stimulus": "__nyesi",
+			"audioStimulus": ["kinyesi"],
+			"answer": "ki"
+		},
+		{
+			"stimulus": "____zaji",
+			"audioStimulus": ["mchezaji"],
+			"answer": "mche"
+		},
+		{
+			"stimulus": "___mani",
+			"audioStimulus": ["thamani"],
+			"answer": "tha"
+		},
+		{
+			"stimulus": "__lianza",
+			"audioStimulus": ["kulianza"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__fadhi",
+			"audioStimulus": ["hifadhi"],
+			"answer": "hi"
+		}
+	]
+}

@@ -1,0 +1,112 @@
+{
+	"bootFeatures": "FTR_DEMO_MISSING_LTR",
+	"random": false,
+	"singleStimulus": true,
+	"dataSource": [
+		{
+			"stimulus": "u__angalia",
+			"audioStimulus": ["unaangalia"],
+			"answer": "na"
+		},
+		{
+			"stimulus": "i__mwambia",
+			"audioStimulus": ["ikimwambia"],
+			"answer": "ki"
+		},
+		{
+			"stimulus": "a__isikia",
+			"audioStimulus": ["aliisikia"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "a__utungia",
+			"audioStimulus": ["aliutungia"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "a__shikilia",
+			"audioStimulus": ["anashikilia"],
+			"answer": "na"
+		},
+		{
+			"stimulus": "a__mwokoa",
+			"audioStimulus": ["akamwokoa"],
+			"answer": "ka"
+		},
+		{
+			"stimulus": "a__mwokoa",
+			"audioStimulus": ["alimwokoa"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "a__kitumia",
+			"audioStimulus": ["alikitumia"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "wa__acha",
+			"audioStimulus": ["waliacha"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "si__taki",
+			"audioStimulus": ["siwataki"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "a__mwita",
+			"audioStimulus": ["alimwita"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "ao___e",
+			"audioStimulus": ["aongee"],
+			"answer": "nge"
+		},
+		{
+			"stimulus": "a__kokwenda",
+			"audioStimulus": ["alikokwenda"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "ma___nyu",
+			"audioStimulus": ["manyunyu"],
+			"answer": "nyu"
+		},
+		{
+			"stimulus": "wa__go",
+			"audioStimulus": ["wadogo"],
+			"answer": "do"
+		},
+		{
+			"stimulus": "ku___ga",
+			"audioStimulus": ["kumpiga"],
+			"answer": "mpi"
+		},
+		{
+			"stimulus": "vi__pu",
+			"audioStimulus": ["vikapu"],
+			"answer": "ka"
+		},
+		{
+			"stimulus": "ni__muuliza",
+			"audioStimulus": ["nikamuuliza"],
+			"answer": "ka"
+		},
+		{
+			"stimulus": "u__nyo",
+			"audioStimulus": ["upenyo"],
+			"answer": "pe"
+		},
+		{
+			"stimulus": "a__vyonaswa",
+			"audioStimulus": ["alivyonaswa"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "u__kwenda",
+			"audioStimulus": ["unakwenda"],
+			"answer": "na"
+		}
+	]
+}

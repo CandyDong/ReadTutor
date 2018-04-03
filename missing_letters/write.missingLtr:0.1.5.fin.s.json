@@ -1,0 +1,112 @@
+{
+	"bootFeatures": "FTR_DEMO_MISSING_LTR",
+	"random": false,
+	"singleStimulus": true,
+	"dataSource": [
+		{
+			"stimulus": "ikii___",
+			"audioStimulus": ["ikiisha"],
+			"answer": "sha"
+		},
+		{
+			"stimulus": "alivyopend__",
+			"audioStimulus": ["alivyopendwa"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "alio__",
+			"audioStimulus": ["aliota"],
+			"answer": "ta"
+		},
+		{
+			"stimulus": "mmili__",
+			"audioStimulus": ["mmiliki"],
+			"answer": "ki"
+		},
+		{
+			"stimulus": "krisma__",
+			"audioStimulus": ["krismasi"],
+			"answer": "si"
+		},
+		{
+			"stimulus": "alinguru__",
+			"audioStimulus": ["alinguruma"],
+			"answer": "ma"
+		},
+		{
+			"stimulus": "ningeweza__",
+			"audioStimulus": ["ningewezaje"],
+			"answer": "je"
+		},
+		{
+			"stimulus": "fofo__",
+			"audioStimulus": ["fofofo"],
+			"answer": "fo"
+		},
+		{
+			"stimulus": "uju__",
+			"audioStimulus": ["ujuzi"],
+			"answer": "zi"
+		},
+		{
+			"stimulus": "mwisho__",
+			"audioStimulus": ["mwishowe"],
+			"answer": "we"
+		},
+		{
+			"stimulus": "kuburudi___",
+			"audioStimulus": ["kuburudisha"],
+			"answer": "sha"
+		},
+		{
+			"stimulus": "alivishi__",
+			"audioStimulus": ["alivishika"],
+			"answer": "ka"
+		},
+		{
+			"stimulus": "umaski__",
+			"audioStimulus": ["umaskini"],
+			"answer": "ni"
+		},
+		{
+			"stimulus": "mnyo___",
+			"audioStimulus": ["mnyonge"],
+			"answer": "nge"
+		},
+		{
+			"stimulus": "shi__",
+			"audioStimulus": ["shika"],
+			"answer": "ka"
+		},
+		{
+			"stimulus": "zisito__",
+			"audioStimulus": ["zisitote"],
+			"answer": "te"
+		},
+		{
+			"stimulus": "kuvunji__",
+			"audioStimulus": ["kuvunjika"],
+			"answer": "ka"
+		},
+		{
+			"stimulus": "jeu__",
+			"audioStimulus": ["jeuri"],
+			"answer": "ri"
+		},
+		{
+			"stimulus": "kumshu__",
+			"audioStimulus": ["kumshuku"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "tupi__",
+			"audioStimulus": ["tupike"],
+			"answer": "ke"
+		},
+		{
+			"stimulus": "amba__",
+			"audioStimulus": ["ambalo"],
+			"answer": "lo"
+		}
+	]
+}

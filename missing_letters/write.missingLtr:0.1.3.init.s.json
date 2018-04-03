@@ -1,0 +1,112 @@
+{
+	"bootFeatures": "FTR_DEMO_MISSING_LTR",
+	"random": false,
+	"singleStimulus": true,
+	"dataSource": [
+		{
+			"stimulus": "__pitia",
+			"audioStimulus": ["kupitia"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__itakimbia",
+			"audioStimulus": ["haitakimbia"],
+			"answer": "ha"
+		},
+		{
+			"stimulus": "__navyokwambia",
+			"audioStimulus": ["ninavyokwambia"],
+			"answer": "ni"
+		},
+		{
+			"stimulus": "__vuka",
+			"audioStimulus": ["kuvuka"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__ahidi",
+			"audioStimulus": ["naahidi"],
+			"answer": "na"
+		},
+		{
+			"stimulus": "__lisimama",
+			"audioStimulus": ["walisimama"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "__nakuja",
+			"audioStimulus": ["wanakuja"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "__lipendeza",
+			"audioStimulus": ["vilipendeza"],
+			"answer": "vi"
+		},
+		{
+			"stimulus": "__donda",
+			"audioStimulus": ["vidonda"],
+			"answer": "vi"
+		},
+		{
+			"stimulus": "__shika",
+			"audioStimulus": ["kushika"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__vazi",
+			"audioStimulus": ["mavazi"],
+			"answer": "ma"
+		},
+		{
+			"stimulus": "__nialika",
+			"audioStimulus": ["kunialika"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__mamosi",
+			"audioStimulus": ["jumamosi"],
+			"answer": "ju"
+		},
+		{
+			"stimulus": "__limwona",
+			"audioStimulus": ["tulimwona"],
+			"answer": "tu"
+		},
+		{
+			"stimulus": "__kianza",
+			"audioStimulus": ["likianza"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "__tengenze",
+			"audioStimulus": ["tutengenze"],
+			"answer": "tu"
+		},
+		{
+			"stimulus": "__kataka",
+			"audioStimulus": ["wakataka"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "__buyu",
+			"audioStimulus": ["kibuyu"],
+			"answer": "ki"
+		},
+		{
+			"stimulus": "__elekeza",
+			"audioStimulus": ["kuelekeza"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__zimwa",
+			"audioStimulus": ["kuzimwa"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__nizungumzia",
+			"audioStimulus": ["kunizungumzia"],
+			"answer": "ku"
+		}
+	]
+}

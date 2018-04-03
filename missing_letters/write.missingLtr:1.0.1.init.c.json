@@ -1,0 +1,112 @@
+{
+	"bootFeatures": "FTR_DEMO_MISSING_LTR",
+	"random": false,
+	"singleStimulus": true,
+	"dataSource": [
+		{
+			"stimulus": "he_i",
+			"audioStimulus": ["heri"],
+			"answer": "r"
+		},
+		{
+			"stimulus": "na_e",
+			"audioStimulus": ["nawe"],
+			"answer": "w"
+		},
+		{
+			"stimulus": "ko_u",
+			"audioStimulus": ["kovu"],
+			"answer": "v"
+		},
+		{
+			"stimulus": "gu_ia",
+			"audioStimulus": ["gunia"],
+			"answer": "n"
+		},
+		{
+			"stimulus": "c_ini",
+			"audioStimulus": ["chini"],
+			"answer": "h"
+		},
+		{
+			"stimulus": "mii_i",
+			"audioStimulus": ["miili"],
+			"answer": "l"
+		},
+		{
+			"stimulus": "jua_i",
+			"audioStimulus": ["juani"],
+			"answer": "n"
+		},
+		{
+			"stimulus": "n_ama",
+			"audioStimulus": ["njama"],
+			"answer": "j"
+		},
+		{
+			"stimulus": "n_we",
+			"audioStimulus": ["ngwe"],
+			"answer": "g"
+		},
+		{
+			"stimulus": "fu_ba",
+			"audioStimulus": ["fumba"],
+			"answer": "m"
+		},
+		{
+			"stimulus": "aa_ze",
+			"audioStimulus": ["aanze"],
+			"answer": "n"
+		},
+		{
+			"stimulus": "a_eze",
+			"audioStimulus": ["aweze"],
+			"answer": "w"
+		},
+		{
+			"stimulus": "te_e",
+			"audioStimulus": ["tele"],
+			"answer": "l"
+		},
+		{
+			"stimulus": "u_ija",
+			"audioStimulus": ["ukija"],
+			"answer": "k"
+		},
+		{
+			"stimulus": "m_oba",
+			"audioStimulus": ["mkoba"],
+			"answer": "k"
+		},
+		{
+			"stimulus": "mo_o",
+			"audioStimulus": ["moto"],
+			"answer": "t"
+		},
+		{
+			"stimulus": "m_ali",
+			"audioStimulus": ["mkali"],
+			"answer": "k"
+		},
+		{
+			"stimulus": "za_u",
+			"audioStimulus": ["zamu"],
+			"answer": "m"
+		},
+		{
+			"stimulus": "hi_i",
+			"audioStimulus": ["hizi"],
+			"answer": "z"
+		},
+		{
+			"stimulus": "ja_aa",
+			"audioStimulus": ["jamaa"],
+			"answer": "m"
+		},
+		{
+			"stimulus": "wa_a",
+			"audioStimulus": ["wana"],
+			"answer": "n"
+		}
+	]
+}

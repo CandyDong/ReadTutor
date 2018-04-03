@@ -1,0 +1,112 @@
+{
+	"bootFeatures": "FTR_DEMO_MISSING_LTR",
+	"random": false,
+	"singleStimulus": true,
+	"dataSource": [
+		{
+			"stimulus": "__mane",
+			"audioStimulus": ["demane"],
+			"answer": "de"
+		},
+		{
+			"stimulus": "__waangalia",
+			"audioStimulus": ["kuwaangalia"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__lishika",
+			"audioStimulus": ["walishika"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "__liyopotea",
+			"audioStimulus": ["niliyopotea"],
+			"answer": "ni"
+		},
+		{
+			"stimulus": "__lealea",
+			"audioStimulus": ["malealea"],
+			"answer": "ma"
+		},
+		{
+			"stimulus": "__kauka",
+			"audioStimulus": ["kukauka"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__lielezea",
+			"audioStimulus": ["zilielezea"],
+			"answer": "zi"
+		},
+		{
+			"stimulus": "__kusanyika",
+			"audioStimulus": ["kukusanyika"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__wazua",
+			"audioStimulus": ["kuwazua"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__meketi",
+			"audioStimulus": ["limeketi"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "__vikuwa",
+			"audioStimulus": ["havikuwa"],
+			"answer": "ha"
+		},
+		{
+			"stimulus": "__lilomjia",
+			"audioStimulus": ["lililomjia"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "__jana",
+			"audioStimulus": ["vijana"],
+			"answer": "vi"
+		},
+		{
+			"stimulus": "__limjua",
+			"audioStimulus": ["walimjua"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "__limtafuta",
+			"audioStimulus": ["walimtafuta"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "__lipa",
+			"audioStimulus": ["kulipa"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "___rimu",
+			"audioStimulus": ["mkarimu"],
+			"answer": "mka"
+		},
+		{
+			"stimulus": "__litakiwa",
+			"audioStimulus": ["walitakiwa"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "__kibeba",
+			"audioStimulus": ["kukibeba"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "__taenda",
+			"audioStimulus": ["tutaenda"],
+			"answer": "tu"
+		},
+		{
+			"stimulus": "__liketi",
+			"audioStimulus": ["waliketi"],
+			"answer": "wa"
+		}
+	]
+}

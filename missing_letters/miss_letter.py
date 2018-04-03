@@ -34,69 +34,6 @@ def read_spreadsheet(excel_path):
 
 
 
-#read file names in narration path and put them into a txt file 
-#which is under the same direction as this python script
-def read_narration(audio_path, word_data_path):
-	#store all the names of narration folders
-	narration_folder_names = []
-
-	for narration_folder in os.listdir(audio_path):
-		if narration_folder == '.DS_Store':
-			continue
-		narration_folder_names.append(narration_folder)
-	narration_folder_names.sort() #sorted increasingly (starts from prior_1)
-
-	#loop through all the narration files and 
-	#put names of the files into a single txt file
-	#specified by word_data_path
-	with open(word_data_path, 'w') as word_data_file:
-		result_str = ""
-		for folder in narration_folder_names:
-			folder_path = audio_path + "/" + folder
-
-			print("scanning recorded words in %s" % folder_path)
-
-			for filename in os.listdir(folder_path):
-
-				#eliminate files that are not mp3 or wav
-				if ((not filename.endswith(".mp3")) and
-				   (not filename.endswith(".wav"))):
-					continue
-
-				#delete suffix like ".mp3" and ".wav"
-				suffix_index = filename.find(".")
-				filename = filename[:suffix_index]
-
-				#delete "copy of" if it's in the filename
-				if filename.startswith("Copy of"):
-					filename_list = filename.split(" ")
-					filename = filename_list[2]
-
-				#delete (1) if it's in the filename
-				if filename.endswith("(1)"):
-					num_index = filename.find("(1)")
-					filename = filename[:num_index]
-
-				#eliminate phrase
-				if len(filename.split(" ")) > 1:
-					continue
-
-				#convert all the letters to lowercase
-				filename = filename.lower()
-
-				#eliminate words that have already been included
-				
-				if filename[:suffix_index] in result_str:
-					continue
-
-				#print(filename)
-
-				result_str += filename
-				result_str += "\n"
-			
-		word_data_file.write(result_str)
-
-
 #loop through story word
 #calculate total appearance of words that contain the consonant
 #filter out those have frequence less than or equal to 5
@@ -197,6 +134,7 @@ def write_info_data(info_path, data_path):
 					if end_letter not in ['a','e','i','o','u']:
 						continue 
 
+					
 					story_data += str(story_word_value)
 					story_data += " "
 					story_data += str(story_freq_value)
@@ -221,9 +159,12 @@ def make_blank(word, part, index_start):
 
 
 
-def make_string(word, part, index_start, level, token, freq_level):
+def make_string(word, part, index_start, level, token):
 	word_blank = make_blank(word, part, index_start)
-	return word + " " + word_blank + " " + part + " " + str(len(part)) + " " + token + " " + freq_level + "\n"
+	# 5 mjini 2 i mj_ni 1
+	return (str(level) + " " + word + " " + str(index_start) + " " 
+			+ part + " " + word_blank + " " + str(len(part)) + 
+			" " + token + "\n")
 
 
 
@@ -233,15 +174,14 @@ def make_string(word, part, index_start, level, token, freq_level):
 #(3). #missing letters: 1 < 2 < 3 < 4
 # Type:  vowel < consonant; syllable < cluster (ends with vowel < ends with consonant)
 #(4). Position of missing letter(s): initial / final / medial
-def generate_problems(word_path, problem_path, data_path):
-	word_file = open(word_path, 'r')
+def generate_problems(problem_path, data_path):
+	
 	syllable_file = open(data_path[0], 'r')
 	consonant_file = open(data_path[1], 'r')
 	storyword_file = open(data_path[2], 'r')
 	problem_file = open(problem_path, 'w')
 
 	result_str = ""
-	word_list = []
 	syllable_list = []
 	consonant_list = []
 	storyword_list = []
@@ -259,52 +199,50 @@ def generate_problems(word_path, problem_path, data_path):
 	consonant_file.close()
 	consonant_list.sort(key=len)
 
-	#all data sorted by frequency originally 
+	#all data sorted by wordlength first then
+	#frequency
 	storyword_line_list_list = []
 	for line in storyword_file:
 		storyword_line_list = line.split(" ")
 		storyword_line_list_list.append(storyword_line_list)
 		storyword_list.append(storyword_line_list[0])
+	storyword_list_reverse = list(reversed(storyword_list))
+	storyword_list.sort(key=lambda w: [len(w),storyword_list_reverse.index(w)])
 	storyword_file.close()
 
-	#all data sorted by length and then frequency as specified in storyword
-	for line in word_file:
-		word = line[:-1]
+	#store all syllables of a word in a list
+	problem_dic = {}
+	for storyword in storyword_list:
+		problem_dic[storyword] = []
 
-		#eliminate those that are not in the storyword list
-		if not (word in storyword_list):
-			continue
+	for storyword in storyword_list:
+		for start_index in range(0, len(storyword)):
+			storyword_slice = storyword[start_index:] 
 
-		word_list.append(word)
-	word_file.close()
-	storyword_list_reverse = list(reversed(storyword_list))
-	word_list.sort(key=lambda w: [len(w),storyword_list_reverse.index(w)])
+			#loop through syllables_list
+			for syllable in syllable_list:
+				if storyword_slice.startswith(syllable):
+					if len(syllable) == 1:
+						problem_dic[storyword].append((syllable, start_index, "vowel"))
+					else:
+						problem_dic[storyword].append((syllable, start_index, "syllable"))
+
+			#loop through consonant_list:
+			for consonant in consonant_list:
+				if len(consonant) > 1:
+					continue
+				if storyword_slice.startswith(consonant):
+					problem_dic[storyword].append((consonant, start_index, "consonant"))
+
 	
-	for word in word_list:
-		#number of missing letters
-		for missing_num in range(1, len(word)+1):
-			for start_index in range(0, len(word)):
-				if (start_index + missing_num) > len(word):
-					break
-				if missing_num == len(word):
-					break
-				part = word[start_index : (start_index+missing_num)]
-
-				#word_freq
-				#eliminate '\n'
-				freq_level = storyword_line_list_list[storyword_list.index(word)][2][:-1] 
-
-				#loop through consonant_list and syllables_list
-				#for part of same length consonants have higher difficulty levels
-				for syllable in syllable_list:
-					if syllable == part:
-						level += 1
-						result_str += make_string(word, part, start_index, level, 'vowel', freq_level)
-				for consonant in consonant_list:
-					if consonant == part:
-						level += 1
-						result_str += make_string(word, part, start_index, level, 'consonant', freq_level)
-
+	result_str = ""
+	for storyword in problem_dic:
+		level = len(problem_dic[storyword])
+	 	for syllable_info in problem_dic[storyword]:
+			syllable = syllable_info[0]
+			start_index = syllable_info[1]
+			token = syllable_info[2]
+			result_str += make_string(storyword, syllable, start_index, level, token)
 	problem_file.write(result_str)
 	problem_file.close()
 	return
@@ -313,135 +251,145 @@ def generate_problems(word_path, problem_path, data_path):
 
 def generate_data(level_list, problem_path):
 	with open(problem_path, "r") as problem_file:
-		#['Name', 'Level', '# Missing Letters', 'Word Length', 
-		#'Position', 'Pronunciation', 'Word Frequency', 
-		#'Stimulus Representation', 'Answer Representation']
+		# ['Name', 'Level', '# Missing Letters', '# Missing Syllables', 
+		# '# Syllables', 'Position', 'Pronunciation', 'Stimulus Representation', 
+		# 'Answer Representation']
 
-		#list for all selected words and their file path (2D list)
-		word_list = []
+		#dictionary for all selected words and their file path (2D list)
+		word_list = {}
+
+		#list for word already picked
+		picked_word = []
+
 		#list for all problems in the file
 		problem_list = []
-		
 		for line in problem_file:
-				problem_list.append(line[:-1])
+			problem_list.append(line[:-1])
 
 		for level in level_list:
-			#print("\n")
 			
 			json_path = level['Name']
+			prob_level = level['Level']
 			num_miss = int(float(level['# Missing Letters']))
-			word_len = int(float(level['Word Length']))
+			syllable_miss = int(float(level['# Missing Syllables']))
+			num_syllable = int(float(level['# Syllables']))
 			part_pos = level['Position']
 			pronu = level['Pronunciation']
-			freq = level['Word Frequency']
-
-			#print("Finding problem for level %s" % level['Level'])
-			#print(level)
 
 			#loop through problem.txt to find an appropriate word
 			#word word_blank len(part) token freq_level
 			#ni _i n 1 consonant common
 			for problem in problem_list:
-				#print("Checking problem %s" % problem)
-				en = 0
-
-				problem_part = problem.split(" ")
+				# 8 njema 0 n _jema 1 consonant
 				
-				#check word length
-				prob_intact = problem_part[0]
-				if len(prob_intact) != word_len:
-					if len(prob_intact) > word_len:
-						if (en):
-							print("no appropriate word exists!!")
-						break
-					if (en):
-						print("invalid word length")
-					continue
-				if (en): print("Word length checked")
+				problem_part = problem.split(" ")
+				prob_num_syllable = int(float(problem_part[0]))
+				prob_intact = problem_part[1]
+				prob_quest = problem_part[3]
+				prob_blank = problem_part[4]
+				prob_pro = problem_part[6]
+				# print("prob_intact %s" % (prob_intact))
+				# print("prob_quest %s" % (prob_quest))
+				# print("prob_blank %s" % (prob_blank))
+				# print("prob_pro %s" % (prob_pro))
 
-				#check number of missing letters
-				prob_num_miss = problem_part[3]
-				if int(float(prob_num_miss)) != num_miss:
-					if (en): print("invalid number of missing letters, %d, %d" %(int(float(prob_num_miss)), num_miss))
+				#check repeated word
+				if prob_intact in picked_word:
+					# print("WRONG: check repeated word")
 					continue
-				if (en): print("number of missing letters checked")
-
-				#check position of the missing part
-				prob_part = problem_part[1]
-				if part_pos == "initial":
-					if not prob_part.startswith("_"):
-						if (en): print("invalid part position")
-						continue
-				elif part_pos == "final":
-					if not prob_part.endswith("_"):
-						if (en): print("invalid part position")
-						continue
-				else:
-					if prob_part.startswith("_") or prob_part.endswith("_"):
-						if (en): print("invalid part position")
-						continue
-				if (en): print("part position checked")
+				# print("check repeated word done..................")
 
 				#check pronunciation 
-				prob_pro = problem_part[4]
-				if prob_pro in pronu:
-					if (en): print("invalid pronunciation")
+				if prob_pro != pronu:
+					# print("WRONG: check pronunciation")
 					continue
-				if (en): print("pronunciation checked")
+				# print("check pronunciation done..................")
 
-				#check word frequency
-				prob_freq = problem_part[5]
-				if freq != prob_freq:
-					if (en): print("invalid word frequency ")
-					continue
-				if (en): print("word frequency checked")
+				#check number of missing syllables
+				if prob_num_syllable != num_syllable:
+					if ((prob_pro == 'vowel') or 
+				        (prob_pro == 'consonant')):
+						#for vowel/consonant questions choose word with shorter length
+						if len(prob_intact) > 5:
+							# print("WRONG: check number of missing syllables")
+							continue
+				# print("check number of missing syllables done..................")
 
-				#check if word is repeated
-				for info_pair in word_list:
-					if prob_intact in info_pair:
-						if (en): print("repeated word")
+				#check position of the missing part
+				if part_pos == "initial":
+					if not prob_blank.startswith("_"):
+						# print("WRONG: check position of the missing part")
 						continue
+				elif part_pos == "final":
+					if not prob_blank.endswith("_"):
+						# print("WRONG: check position of the missing part")
+						continue
+				else:
+					if prob_blank.startswith("_") or prob_blank.endswith("_"):
+						# print("WRONG: check position of the missing part")
+						continue
+				# print("check position of the missing part done..................")
 
-				if (en): print("word passed!!")
-				prob_quest = problem_part[2]
-				word_list.append([prob_intact, prob_part, prob_quest, json_path])
-				break
-		#print(word_list)
+				#only need 20 questions for each
+				if len(word_list.setdefault(prob_level, [])) > 20:
+					break
+				picked_word.append(prob_intact)
+				word_list[prob_level].append([prob_intact, prob_blank, prob_quest, json_path])
 		
+		#print all problems collected
+		# for level in word_list:
+		# 	print(level)
+		# 	for info in word_list[level]:
+		# 		print(info)
+		# 	print("\n")
+
 		#write into JSON files
-		for word_info in word_list:
-			prob_intact = word_info[0]
-			prob_part = word_info[1]
-			prob_quest = word_info[2]
-			prob_path = word_info[3]
+		for level in word_list:
+			info_list = word_list[level]
 			prob_str = ""
+			prob_intact = ""
+			prob_blank = ""
+			prob_quest = ""
+			json_path = ""
 
-			# { "bootFeatures":"FTR_WORDS",
-
-	 		#"random": false,
-
-	 		#"singleStimulus": true,
-
-	 		# "dataSource": [
-				# {
-				# {
-
-		    #   "stimulus": "C_T",
-
-		    #   "audioStimulus": ["Write the missing letter in", "cat", ""],
-
-		    #   "answer": "A"
-
-		    # }]
-
-			prob_str += '{\n\t\"bootFeatures\": \"FTR_WORDS\",'
+			# {
+			#   "bootFeatures":"FTR_DEMO_MISSING_LTR",
+			#   "random": false,
+			#   "singleStimulus": true,
+			#   "dataSource": [
+			prob_str += '{\n\t\"bootFeatures\": \"FTR_DEMO_MISSING_LTR\",'
 			prob_str += '\n\t\"random\": false,\n\t\"singleStimulus\": true,\n'
-			prob_str += '\t\"dataSource\": [\n\t\t{\n\t\t\t'
-			prob_str += '\"stimulus\": \"' + prob_part.upper() + '\",\n\t\t\t'
-			prob_str += '\"audioStimulus\": [\"Write the missing letter in\", \"' + prob_intact + '\", \"\"],\n\t\t\t'
-			prob_str += '\"answer\": \"' + prob_quest.upper() + '\"\n\t\t}\n\t]\n}'
+			prob_str += '\t\"dataSource\": [\n\t\t'
 
-			prob_file = open(prob_path, 'w')
+			for info in info_list:
+				prob_intact = info[0]
+				prob_blank = info[1]
+				prob_quest = info[2]
+				json_path = info[3]
+				
+				#     {
+				#       "stimulus": "s_ba",
+				#       "audioStimulus": ["saba"],
+				#       "answer": "a"
+				#     },
+				#     {
+				#       "stimulus": "c_a",
+				#       "audioStimulus": ["cha"],
+				#       "answer": "h"
+				#     }
+				#   ]
+				# }
+
+				prob_str += '{\n\t\t\t'
+				prob_str += '\"stimulus\": \"' + prob_blank + '\",\n\t\t\t'
+				prob_str += '\"audioStimulus\": [\"' + prob_intact + '\"],\n\t\t\t'
+				prob_str += '\"answer\": \"' + prob_quest + '\"\n\t\t},\n\t\t'
+
+			#delete the last comma
+			prob_str = prob_str[:-4]
+			prob_str += "\n\t]\n}"
+			json_path += ".json"
+			prob_file = open(json_path, 'w')
 			prob_file.write(prob_str)
 			prob_file.close()
 
@@ -456,10 +404,6 @@ def main():
 	if len(sys.argv) != 2:
 		print("Wrong number of cmdline args!!")
 
-	audio_path = "./narration"
-	word_data_path = "./word_data.txt"
-	read_narration(audio_path, word_data_path)
-
 	info_path = "./7181_swahili_story_words_Swahili_syllable_and_consonant_statistics.xlsx"
 	syllable_path = "./syllable.txt" 
 	consonant_path = "./consonant.txt"
@@ -470,16 +414,17 @@ def main():
 	write_info_data(info_path, data_path)
 	filter_low_freq(consonant_path, filtered_consonant_path, storyword_path)
 	filter_low_freq(syllable_path, filtered_syllable_path, storyword_path)
+	
 	data_path = [filtered_syllable_path, filtered_consonant_path, storyword_path]
-
 	problem_path = "./problems.txt"
-	generate_problems(word_data_path, problem_path, data_path)
+	generate_problems(problem_path, data_path)
 
 	###############generate JSON files###################### 
 	excel_path = sys.argv[1]
-	level_list = read_spreadsheet(excel_path) 
-	generate_data(level_list, problem_path)
+	level_list = read_spreadsheet(excel_path)
 
+	generate_data(level_list, problem_path)
+	return
 
 
 if __name__ == '__main__':

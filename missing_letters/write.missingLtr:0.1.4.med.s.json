@@ -1,0 +1,112 @@
+{
+	"bootFeatures": "FTR_DEMO_MISSING_LTR",
+	"random": false,
+	"singleStimulus": true,
+	"dataSource": [
+		{
+			"stimulus": "i__sambaa",
+			"audioStimulus": ["ilisambaa"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "mo__mbigue",
+			"audioStimulus": ["mozambigue"],
+			"answer": "za"
+		},
+		{
+			"stimulus": "tu__amua",
+			"audioStimulus": ["tuliamua"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "wa__songea",
+			"audioStimulus": ["walisongea"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "ni__amshwa",
+			"audioStimulus": ["niliamshwa"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "vi__le",
+			"audioStimulus": ["vidole"],
+			"answer": "do"
+		},
+		{
+			"stimulus": "a__jichomoza",
+			"audioStimulus": ["alijichomoza"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "u__nila",
+			"audioStimulus": ["utanila"],
+			"answer": "ta"
+		},
+		{
+			"stimulus": "kuu__mba",
+			"audioStimulus": ["kuulamba"],
+			"answer": "la"
+		},
+		{
+			"stimulus": "ha__mruhusu",
+			"audioStimulus": ["hakumruhusu"],
+			"answer": "ku"
+		},
+		{
+			"stimulus": "a__mwelezea",
+			"audioStimulus": ["akamwelezea"],
+			"answer": "ka"
+		},
+		{
+			"stimulus": "tu__vua",
+			"audioStimulus": ["tulivua"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "ku__uma",
+			"audioStimulus": ["kuwauma"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "a__jifanya",
+			"audioStimulus": ["akijifanya"],
+			"answer": "ki"
+		},
+		{
+			"stimulus": "wa__anguka",
+			"audioStimulus": ["walianguka"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "a__weza",
+			"audioStimulus": ["ataweza"],
+			"answer": "ta"
+		},
+		{
+			"stimulus": "u__kalo",
+			"audioStimulus": ["utakalo"],
+			"answer": "ta"
+		},
+		{
+			"stimulus": "ki___hili",
+			"audioStimulus": ["kiswahili"],
+			"answer": "swa"
+		},
+		{
+			"stimulus": "i__yowalizimu",
+			"audioStimulus": ["iliyowalizimu"],
+			"answer": "li"
+		},
+		{
+			"stimulus": "a__yachua",
+			"audioStimulus": ["akayachua"],
+			"answer": "ka"
+		},
+		{
+			"stimulus": "m__sahau",
+			"audioStimulus": ["msisahau"],
+			"answer": "si"
+		}
+	]
+}

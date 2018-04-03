@@ -1,0 +1,112 @@
+{
+	"bootFeatures": "FTR_DEMO_MISSING_LTR",
+	"random": false,
+	"singleStimulus": true,
+	"dataSource": [
+		{
+			"stimulus": "aliheshimi__",
+			"audioStimulus": ["aliheshimiwa"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "iliyoziungani___",
+			"audioStimulus": ["iliyoziunganisha"],
+			"answer": "sha"
+		},
+		{
+			"stimulus": "usadi__",
+			"audioStimulus": ["usadizi"],
+			"answer": "zi"
+		},
+		{
+			"stimulus": "ucho__",
+			"audioStimulus": ["uchote"],
+			"answer": "te"
+		},
+		{
+			"stimulus": "aliba__",
+			"audioStimulus": ["alibaki"],
+			"answer": "ki"
+		},
+		{
+			"stimulus": "wana__",
+			"audioStimulus": ["wanane"],
+			"answer": "ne"
+		},
+		{
+			"stimulus": "utakaporu__",
+			"audioStimulus": ["utakaporuka"],
+			"answer": "ka"
+		},
+		{
+			"stimulus": "wakuepu__",
+			"audioStimulus": ["wakuepuke"],
+			"answer": "ke"
+		},
+		{
+			"stimulus": "alihi__",
+			"audioStimulus": ["alihisi"],
+			"answer": "si"
+		},
+		{
+			"stimulus": "alikasiri__",
+			"audioStimulus": ["alikasirika"],
+			"answer": "ka"
+		},
+		{
+			"stimulus": "walikoku__",
+			"audioStimulus": ["walikokuwa"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "vinywa__",
+			"audioStimulus": ["vinywaji"],
+			"answer": "ji"
+		},
+		{
+			"stimulus": "aliaibi__",
+			"audioStimulus": ["aliaibika"],
+			"answer": "ka"
+		},
+		{
+			"stimulus": "kupig__",
+			"audioStimulus": ["kupigwa"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "akaliuli__",
+			"audioStimulus": ["akaliuliza"],
+			"answer": "za"
+		},
+		{
+			"stimulus": "ikise__",
+			"audioStimulus": ["ikisema"],
+			"answer": "ma"
+		},
+		{
+			"stimulus": "nitakuvu__",
+			"audioStimulus": ["nitakuvuta"],
+			"answer": "ta"
+		},
+		{
+			"stimulus": "walimwu__",
+			"audioStimulus": ["walimwuma"],
+			"answer": "ma"
+		},
+		{
+			"stimulus": "unaopendekez__",
+			"audioStimulus": ["unaopendekezwa"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "kusafi__",
+			"audioStimulus": ["kusafiri"],
+			"answer": "ri"
+		},
+		{
+			"stimulus": "kimbie__",
+			"audioStimulus": ["kimbieni"],
+			"answer": "ni"
+		}
+	]
+}

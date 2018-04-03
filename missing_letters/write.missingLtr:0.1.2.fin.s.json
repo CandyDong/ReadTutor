@@ -1,0 +1,112 @@
+{
+	"bootFeatures": "FTR_DEMO_MISSING_LTR",
+	"random": false,
+	"singleStimulus": true,
+	"dataSource": [
+		{
+			"stimulus": "alija__",
+			"audioStimulus": ["alijawa"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "ikavu___",
+			"audioStimulus": ["ikavutwa"],
+			"answer": "twa"
+		},
+		{
+			"stimulus": "uma___",
+			"audioStimulus": ["umande"],
+			"answer": "nde"
+		},
+		{
+			"stimulus": "akinifua__",
+			"audioStimulus": ["akinifuata"],
+			"answer": "ta"
+		},
+		{
+			"stimulus": "akakubali__",
+			"audioStimulus": ["akakubaliwa"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "tunayafaha__",
+			"audioStimulus": ["tunayafahamu"],
+			"answer": "mu"
+		},
+		{
+			"stimulus": "nimekupa__",
+			"audioStimulus": ["nimekupata"],
+			"answer": "ta"
+		},
+		{
+			"stimulus": "kimiuji__",
+			"audioStimulus": ["kimiujiza"],
+			"answer": "za"
+		},
+		{
+			"stimulus": "vyu___",
+			"audioStimulus": ["vyungu"],
+			"answer": "ngu"
+		},
+		{
+			"stimulus": "sikuwe__",
+			"audioStimulus": ["sikuweza"],
+			"answer": "za"
+		},
+		{
+			"stimulus": "lilipoku__",
+			"audioStimulus": ["lilipokuwa"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "nikatoro__",
+			"audioStimulus": ["nikatoroka"],
+			"answer": "ka"
+		},
+		{
+			"stimulus": "unata__",
+			"audioStimulus": ["unataka"],
+			"answer": "ka"
+		},
+		{
+			"stimulus": "unatudanga___",
+			"audioStimulus": ["unatudanganya"],
+			"answer": "nya"
+		},
+		{
+			"stimulus": "nifanye__",
+			"audioStimulus": ["nifanyeje"],
+			"answer": "je"
+		},
+		{
+			"stimulus": "kumwa__",
+			"audioStimulus": ["kumwaga"],
+			"answer": "ga"
+		},
+		{
+			"stimulus": "akana__",
+			"audioStimulus": ["akanawa"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "kuifi___",
+			"audioStimulus": ["kuificha"],
+			"answer": "cha"
+		},
+		{
+			"stimulus": "aliichuku__",
+			"audioStimulus": ["aliichukuwa"],
+			"answer": "wa"
+		},
+		{
+			"stimulus": "kiche__",
+			"audioStimulus": ["kicheko"],
+			"answer": "ko"
+		},
+		{
+			"stimulus": "alitafu__",
+			"audioStimulus": ["alitafuta"],
+			"answer": "ta"
+		}
+	]
+}
