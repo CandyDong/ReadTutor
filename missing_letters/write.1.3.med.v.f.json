@@ -1,0 +1,12 @@
+{
+	"bootFeatures": "FTR_WORDS",
+	"random": false,
+	"singleStimulus": true,
+	"dataSource": [
+		{
+			"stimulus": "K_A",
+			"audioStimulus": ["Write the missing letter in", "kwa", ""],
+			"answer": "W"
+		}
+	]
+}

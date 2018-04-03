@@ -1,561 +1,561 @@
-ni _i 1 consonant common
-ni n_ 1 vowel common
-ya _a 1 consonant common
-ya y_ 1 vowel common
-taa _aa 1 consonant rare
-taa t_a 1 vowel rare
-taa ta_ 1 vowel rare
-taa __a 2 vowel rare
-pua _ua 1 consonant common
-pua p_a 1 vowel common
-pua pu_ 1 vowel common
-pua __a 2 vowel common
-hii _ii 1 consonant common
-hii h_i 1 vowel common
-hii hi_ 1 vowel common
-hii __i 2 vowel common
-jua _ua 1 consonant common
-jua j_a 1 vowel common
-jua ju_ 1 vowel common
-jua __a 2 vowel common
-kwa _wa 1 consonant common
-kwa k_a 1 consonant common
-kwa kw_ 1 vowel common
-kwa __a 2 consonant common
-kwa k__ 2 vowel common
-bega _ega 1 consonant rare
-bega b_ga 1 vowel rare
-bega be_a 1 consonant rare
-bega beg_ 1 vowel rare
-bega __ga 2 vowel rare
-bega be__ 2 vowel rare
-bata _ata 1 consonant rare
-bata b_ta 1 vowel rare
-bata ba_a 1 consonant rare
-bata bat_ 1 vowel rare
-bata __ta 2 vowel rare
-bata ba__ 2 vowel rare
-kaka _aka 1 consonant rare
-kaka k_ka 1 vowel rare
-kaka ka_a 1 consonant rare
-kaka kak_ 1 vowel rare
-kaka __ka 2 vowel rare
-kaka ka__ 2 vowel rare
-lori _ori 1 consonant rare
-lori l_ri 1 vowel rare
-lori lo_i 1 consonant rare
-lori lor_ 1 vowel rare
-lori __ri 2 vowel rare
-lori lo__ 2 vowel rare
-chai _hai 1 consonant rare
-chai c_ai 1 consonant rare
-chai ch_i 1 vowel rare
-chai cha_ 1 vowel rare
-chai __ai 2 consonant rare
-chai c__i 2 vowel rare
-chai ___i 3 vowel rare
-chui _hui 1 consonant common
-chui c_ui 1 consonant common
-chui ch_i 1 vowel common
-chui chu_ 1 vowel common
-chui __ui 2 consonant common
-chui c__i 2 vowel common
-chui ___i 3 vowel common
-gari _ari 1 consonant common
-gari g_ri 1 vowel common
-gari ga_i 1 consonant common
-gari gar_ 1 vowel common
-gari __ri 2 vowel common
-gari ga__ 2 vowel common
-vitu _itu 1 consonant common
-vitu v_tu 1 vowel common
-vitu vi_u 1 consonant common
-vitu vit_ 1 vowel common
-vitu __tu 2 vowel common
-vitu vi__ 2 vowel common
-sawa _awa 1 consonant common
-sawa s_wa 1 vowel common
-sawa sa_a 1 consonant common
-sawa saw_ 1 vowel common
-sawa __wa 2 vowel common
-sawa sa__ 2 vowel common
-dada _ada 1 consonant common
-dada d_da 1 vowel common
-dada da_a 1 consonant common
-dada dad_ 1 vowel common
-dada __da 2 vowel common
-dada da__ 2 vowel common
-paka _aka 1 consonant common
-paka p_ka 1 vowel common
-paka pa_a 1 consonant common
-paka pak_ 1 vowel common
-paka __ka 2 vowel common
-paka pa__ 2 vowel common
-mguu _guu 1 consonant common
-mguu m_uu 1 consonant common
-mguu mg_u 1 vowel common
-mguu mgu_ 1 vowel common
-mguu __uu 2 consonant common
-mguu m__u 2 vowel common
-mguu ___u 3 vowel common
-meno _eno 1 consonant common
-meno m_no 1 vowel common
-meno me_o 1 consonant common
-meno men_ 1 vowel common
-meno __no 2 vowel common
-meno me__ 2 vowel common
-bibi _ibi 1 consonant common
-bibi b_bi 1 vowel common
-bibi bi_i 1 consonant common
-bibi bib_ 1 vowel common
-bibi __bi 2 vowel common
-bibi bi__ 2 vowel common
-mbwa _bwa 1 consonant common
-mbwa m_wa 1 consonant common
-mbwa mb_a 1 consonant common
-mbwa mbw_ 1 vowel common
-mbwa __wa 2 consonant common
-mbwa m__a 2 consonant common
-mbwa mb__ 2 vowel common
-mbwa ___a 3 consonant common
-mbwa m___ 3 vowel common
-baba _aba 1 consonant common
-baba b_ba 1 vowel common
-baba ba_a 1 consonant common
-baba bab_ 1 vowel common
-baba __ba 2 vowel common
-baba ba__ 2 vowel common
-kuku _uku 1 consonant common
-kuku k_ku 1 vowel common
-kuku ku_u 1 consonant common
-kuku kuk_ 1 vowel common
-kuku __ku 2 vowel common
-kuku ku__ 2 vowel common
-hiyo _iyo 1 consonant common
-hiyo h_yo 1 vowel common
-hiyo hi_o 1 consonant common
-hiyo hiy_ 1 vowel common
-hiyo __yo 2 vowel common
-hiyo hi__ 2 vowel common
-watu _atu 1 consonant common
-watu w_tu 1 vowel common
-watu wa_u 1 consonant common
-watu wat_ 1 vowel common
-watu __tu 2 vowel common
-watu wa__ 2 vowel common
-mara _ara 1 consonant common
-mara m_ra 1 vowel common
-mara ma_a 1 consonant common
-mara mar_ 1 vowel common
-mara __ra 2 vowel common
-mara ma__ 2 vowel common
-fisi _isi 1 consonant common
-fisi f_si 1 vowel common
-fisi fi_i 1 consonant common
-fisi fis_ 1 vowel common
-fisi __si 2 vowel common
-fisi fi__ 2 vowel common
-maji _aji 1 consonant common
-maji m_ji 1 vowel common
-maji ma_i 1 consonant common
-maji maj_ 1 vowel common
-maji __ji 2 vowel common
-maji ma__ 2 vowel common
-mama _ama 1 consonant common
-mama m_ma 1 vowel common
-mama ma_a 1 consonant common
-mama mam_ 1 vowel common
-mama __ma 2 vowel common
-mama ma__ 2 vowel common
-jicho _icho 1 consonant rare
-jicho j_cho 1 vowel rare
-jicho ji_ho 1 consonant rare
-jicho jic_o 1 consonant rare
-jicho jich_ 1 vowel rare
-jicho __cho 2 vowel rare
-jicho ji__o 2 consonant rare
-jicho jic__ 2 vowel rare
-jicho ji___ 3 vowel rare
-imara _mara 1 vowel rare
-imara i_ara 1 consonant rare
-imara im_ra 1 vowel rare
-imara ima_a 1 consonant rare
-imara imar_ 1 vowel rare
-imara i__ra 2 vowel rare
-imara ima__ 2 vowel rare
-twiga _wiga 1 consonant rare
-twiga t_iga 1 consonant rare
-twiga tw_ga 1 vowel rare
-twiga twi_a 1 consonant rare
-twiga twig_ 1 vowel rare
-twiga __iga 2 consonant rare
-twiga t__ga 2 vowel rare
-twiga twi__ 2 vowel rare
-chura _hura 1 consonant rare
-chura c_ura 1 consonant rare
-chura ch_ra 1 vowel rare
-chura chu_a 1 consonant rare
-chura chur_ 1 vowel rare
-chura __ura 2 consonant rare
-chura c__ra 2 vowel rare
-chura chu__ 2 vowel rare
-chura ___ra 3 vowel rare
-mdomo _domo 1 consonant rare
-mdomo m_omo 1 consonant rare
-mdomo md_mo 1 vowel rare
-mdomo mdo_o 1 consonant rare
-mdomo mdom_ 1 vowel rare
-mdomo __omo 2 consonant rare
-mdomo m__mo 2 vowel rare
-mdomo mdo__ 2 vowel rare
-mdomo ___mo 3 vowel rare
-kutoa _utoa 1 consonant rare
-kutoa k_toa 1 vowel rare
-kutoa ku_oa 1 consonant rare
-kutoa kut_a 1 vowel rare
-kutoa kuto_ 1 vowel rare
-kutoa __toa 2 vowel rare
-kutoa ku__a 2 vowel rare
-tumbo _umbo 1 consonant common
-tumbo t_mbo 1 vowel common
-tumbo tu_bo 1 consonant common
-tumbo tum_o 1 consonant common
-tumbo tumb_ 1 vowel common
-tumbo __mbo 2 vowel common
-tumbo tu__o 2 consonant common
-tumbo tum__ 2 vowel common
-tumbo tu___ 3 vowel common
-tembo _embo 1 consonant common
-tembo t_mbo 1 vowel common
-tembo te_bo 1 consonant common
-tembo tem_o 1 consonant common
-tembo temb_ 1 vowel common
-tembo __mbo 2 vowel common
-tembo te__o 2 consonant common
-tembo tem__ 2 vowel common
-tembo te___ 3 vowel common
-mkono _kono 1 consonant common
-mkono m_ono 1 consonant common
-mkono mk_no 1 vowel common
-mkono mko_o 1 consonant common
-mkono mkon_ 1 vowel common
-mkono __ono 2 consonant common
-mkono m__no 2 vowel common
-mkono mko__ 2 vowel common
-mkono ___no 3 vowel common
-ndizi _dizi 1 consonant common
-ndizi n_izi 1 consonant common
-ndizi nd_zi 1 vowel common
-ndizi ndi_i 1 consonant common
-ndizi ndiz_ 1 vowel common
-ndizi __izi 2 consonant common
-ndizi n__zi 2 vowel common
-ndizi ndi__ 2 vowel common
-ndizi ___zi 3 vowel common
-viatu _iatu 1 consonant common
-viatu v_atu 1 vowel common
-viatu vi_tu 1 vowel common
-viatu via_u 1 consonant common
-viatu viat_ 1 vowel common
-viatu __atu 2 vowel common
-viatu via__ 2 vowel common
-ndiyo _diyo 1 consonant common
-ndiyo n_iyo 1 consonant common
-ndiyo nd_yo 1 vowel common
-ndiyo ndi_o 1 consonant common
-ndiyo ndiy_ 1 vowel common
-ndiyo __iyo 2 consonant common
-ndiyo n__yo 2 vowel common
-ndiyo ndi__ 2 vowel common
-ndiyo ___yo 3 vowel common
-viazi _iazi 1 consonant common
-viazi v_azi 1 vowel common
-viazi vi_zi 1 vowel common
-viazi via_i 1 consonant common
-viazi viaz_ 1 vowel common
-viazi __azi 2 vowel common
-viazi via__ 2 vowel common
-punda _unda 1 consonant common
-punda p_nda 1 vowel common
-punda pu_da 1 consonant common
-punda pun_a 1 consonant common
-punda pund_ 1 vowel common
-punda __nda 2 vowel common
-punda pu__a 2 consonant common
-punda pun__ 2 vowel common
-punda pu___ 3 vowel common
-panya _anya 1 consonant common
-panya p_nya 1 vowel common
-panya pa_ya 1 consonant common
-panya pan_a 1 consonant common
-panya pany_ 1 vowel common
-panya __nya 2 vowel common
-panya pa__a 2 consonant common
-panya pan__ 2 vowel common
-panya pa___ 3 vowel common
-mboga _boga 1 consonant common
-mboga m_oga 1 consonant common
-mboga mb_ga 1 vowel common
-mboga mbo_a 1 consonant common
-mboga mbog_ 1 vowel common
-mboga __oga 2 consonant common
-mboga m__ga 2 vowel common
-mboga mbo__ 2 vowel common
-mboga ___ga 3 vowel common
-mbuzi _buzi 1 consonant common
-mbuzi m_uzi 1 consonant common
-mbuzi mb_zi 1 vowel common
-mbuzi mbu_i 1 consonant common
-mbuzi mbuz_ 1 vowel common
-mbuzi __uzi 2 consonant common
-mbuzi m__zi 2 vowel common
-mbuzi mbu__ 2 vowel common
-mbuzi ___zi 3 vowel common
-nyoka _yoka 1 consonant common
-nyoka n_oka 1 consonant common
-nyoka ny_ka 1 vowel common
-nyoka nyo_a 1 consonant common
-nyoka nyok_ 1 vowel common
-nyoka __oka 2 consonant common
-nyoka n__ka 2 vowel common
-nyoka nyo__ 2 vowel common
-nyoka ___ka 3 vowel common
-nyama _yama 1 consonant common
-nyama n_ama 1 consonant common
-nyama ny_ma 1 vowel common
-nyama nya_a 1 consonant common
-nyama nyam_ 1 vowel common
-nyama __ama 2 consonant common
-nyama n__ma 2 vowel common
-nyama nya__ 2 vowel common
-nyama ___ma 3 vowel common
-simba _imba 1 consonant common
-simba s_mba 1 vowel common
-simba si_ba 1 consonant common
-simba sim_a 1 consonant common
-simba simb_ 1 vowel common
-simba __mba 2 vowel common
-simba si__a 2 consonant common
-simba sim__ 2 vowel common
-simba si___ 3 vowel common
-hivyo _ivyo 1 consonant common
-hivyo h_vyo 1 vowel common
-hivyo hi_yo 1 consonant common
-hivyo hiv_o 1 consonant common
-hivyo hivy_ 1 vowel common
-hivyo __vyo 2 vowel common
-hivyo hi__o 2 consonant common
-hivyo hiv__ 2 vowel common
-hivyo hi___ 3 vowel common
-vidole _idole 1 consonant rare
-vidole v_dole 1 vowel rare
-vidole vi_ole 1 consonant rare
-vidole vid_le 1 vowel rare
-vidole vido_e 1 consonant rare
-vidole vidol_ 1 vowel rare
-vidole __dole 2 vowel rare
-vidole vi__le 2 vowel rare
-vidole vido__ 2 vowel rare
-hunywa _unywa 1 consonant rare
-hunywa h_nywa 1 vowel rare
-hunywa hu_ywa 1 consonant rare
-hunywa hun_wa 1 consonant rare
-hunywa huny_a 1 consonant rare
-hunywa hunyw_ 1 vowel rare
-hunywa __nywa 2 vowel rare
-hunywa hu__wa 2 consonant rare
-hunywa huny__ 2 vowel rare
-hunywa hu___a 3 consonant rare
-farasi _arasi 1 consonant common
-farasi f_rasi 1 vowel common
-farasi fa_asi 1 consonant common
-farasi far_si 1 vowel common
-farasi fara_i 1 consonant common
-farasi faras_ 1 vowel common
-farasi __rasi 2 vowel common
-farasi fa__si 2 vowel common
-farasi fara__ 2 vowel common
-kondoo _ondoo 1 consonant common
-kondoo k_ndoo 1 vowel common
-kondoo ko_doo 1 consonant common
-kondoo kon_oo 1 consonant common
-kondoo kond_o 1 vowel common
-kondoo kondo_ 1 vowel common
-kondoo __ndoo 2 vowel common
-kondoo ko__oo 2 consonant common
-kondoo kon__o 2 vowel common
-kondoo ko___o 3 vowel common
-vizuri _izuri 1 consonant common
-vizuri v_zuri 1 vowel common
-vizuri vi_uri 1 consonant common
-vizuri viz_ri 1 vowel common
-vizuri vizu_i 1 consonant common
-vizuri vizur_ 1 vowel common
-vizuri __zuri 2 vowel common
-vizuri vizu__ 2 vowel common
-kichwa _ichwa 1 consonant common
-kichwa k_chwa 1 vowel common
-kichwa ki_hwa 1 consonant common
-kichwa kic_wa 1 consonant common
-kichwa kich_a 1 consonant common
-kichwa kichw_ 1 vowel common
-kichwa __chwa 2 vowel common
-kichwa ki__wa 2 consonant common
-kichwa kich__ 2 vowel common
-mjomba _jomba 1 consonant common
-mjomba m_omba 1 consonant common
-mjomba mj_mba 1 vowel common
-mjomba mjo_ba 1 consonant common
-mjomba mjom_a 1 consonant common
-mjomba mjomb_ 1 vowel common
-mjomba __omba 2 consonant common
-mjomba m__mba 2 vowel common
-mjomba mjo__a 2 consonant common
-mjomba mjom__ 2 vowel common
-mjomba ___mba 3 vowel common
-mjomba mjo___ 3 vowel common
-angani _ngani 1 vowel common
-angani a_gani 1 consonant common
-angani an_ani 1 consonant common
-angani ang_ni 1 vowel common
-angani anga_i 1 consonant common
-angani angan_ 1 vowel common
-angani a__ani 2 consonant common
-angani an__ni 2 vowel common
-angani anga__ 2 vowel common
-angani a___ni 3 vowel common
-maziwa _aziwa 1 consonant common
-maziwa m_ziwa 1 vowel common
-maziwa ma_iwa 1 consonant common
-maziwa maz_wa 1 vowel common
-maziwa mazi_a 1 consonant common
-maziwa maziw_ 1 vowel common
-maziwa __ziwa 2 vowel common
-maziwa ma__wa 2 vowel common
-maziwa mazi__ 2 vowel common
-nyanya _yanya 1 consonant common
-nyanya n_anya 1 consonant common
-nyanya ny_nya 1 vowel common
-nyanya nya_ya 1 consonant common
-nyanya nyan_a 1 consonant common
-nyanya nyany_ 1 vowel common
-nyanya __anya 2 consonant common
-nyanya n__nya 2 vowel common
-nyanya nya__a 2 consonant common
-nyanya nyan__ 2 vowel common
-nyanya ___nya 3 vowel common
-nyanya nya___ 3 vowel common
-samaki _amaki 1 consonant common
-samaki s_maki 1 vowel common
-samaki sa_aki 1 consonant common
-samaki sam_ki 1 vowel common
-samaki sama_i 1 consonant common
-samaki samak_ 1 vowel common
-samaki __maki 2 vowel common
-samaki sa__ki 2 vowel common
-samaki sama__ 2 vowel common
-rafiki _afiki 1 consonant common
-rafiki r_fiki 1 vowel common
-rafiki ra_iki 1 consonant common
-rafiki raf_ki 1 vowel common
-rafiki rafi_i 1 consonant common
-rafiki rafik_ 1 vowel common
-rafiki __fiki 2 vowel common
-rafiki ra__ki 2 vowel common
-rafiki rafi__ 2 vowel common
-watoto _atoto 1 consonant common
-watoto w_toto 1 vowel common
-watoto wa_oto 1 consonant common
-watoto wat_to 1 vowel common
-watoto wato_o 1 consonant common
-watoto watot_ 1 vowel common
-watoto __toto 2 vowel common
-watoto wa__to 2 vowel common
-watoto wato__ 2 vowel common
-mkulima _kulima 1 consonant common
-mkulima m_ulima 1 consonant common
-mkulima mk_lima 1 vowel common
-mkulima mku_ima 1 consonant common
-mkulima mkul_ma 1 vowel common
-mkulima mkuli_a 1 consonant common
-mkulima mkulim_ 1 vowel common
-mkulima __ulima 2 consonant common
-mkulima m__lima 2 vowel common
-mkulima mku__ma 2 vowel common
-mkulima mkuli__ 2 vowel common
-mkulima ___lima 3 vowel common
-mwalimu _walimu 1 consonant common
-mwalimu m_alimu 1 consonant common
-mwalimu mw_limu 1 vowel common
-mwalimu mwa_imu 1 consonant common
-mwalimu mwal_mu 1 vowel common
-mwalimu mwali_u 1 consonant common
-mwalimu mwalim_ 1 vowel common
-mwalimu __alimu 2 consonant common
-mwalimu m__limu 2 vowel common
-mwalimu mwa__mu 2 vowel common
-mwalimu mwali__ 2 vowel common
-mwalimu ___limu 3 vowel common
-wanyama _anyama 1 consonant common
-wanyama w_nyama 1 vowel common
-wanyama wa_yama 1 consonant common
-wanyama wan_ama 1 consonant common
-wanyama wany_ma 1 vowel common
-wanyama wanya_a 1 consonant common
-wanyama wanyam_ 1 vowel common
-wanyama __nyama 2 vowel common
-wanyama wa__ama 2 consonant common
-wanyama wan__ma 2 vowel common
-wanyama wanya__ 2 vowel common
-wanyama wa___ma 3 vowel common
-chakula _hakula 1 consonant common
-chakula c_akula 1 consonant common
-chakula ch_kula 1 vowel common
-chakula cha_ula 1 consonant common
-chakula chak_la 1 vowel common
-chakula chaku_a 1 consonant common
-chakula chakul_ 1 vowel common
-chakula __akula 2 consonant common
-chakula c__kula 2 vowel common
-chakula cha__la 2 vowel common
-chakula chaku__ 2 vowel common
-chakula ___kula 3 vowel common
-sungura _ungura 1 consonant common
-sungura s_ngura 1 vowel common
-sungura su_gura 1 consonant common
-sungura sun_ura 1 consonant common
-sungura sung_ra 1 vowel common
-sungura sungu_a 1 consonant common
-sungura sungur_ 1 vowel common
-sungura __ngura 2 vowel common
-sungura su__ura 2 consonant common
-sungura sun__ra 2 vowel common
-sungura sungu__ 2 vowel common
-sungura su___ra 3 vowel common
-maharage _aharage 1 consonant rare
-maharage m_harage 1 vowel rare
-maharage ma_arage 1 consonant rare
-maharage mah_rage 1 vowel rare
-maharage maha_age 1 consonant rare
-maharage mahar_ge 1 vowel rare
-maharage mahara_e 1 consonant rare
-maharage maharag_ 1 vowel rare
-maharage __harage 2 vowel rare
-maharage ma__rage 2 vowel rare
-maharage maha__ge 2 vowel rare
-maharage mahara__ 2 vowel rare
-shangazi _hangazi 1 consonant common
-shangazi s_angazi 1 consonant common
-shangazi sh_ngazi 1 vowel common
-shangazi sha_gazi 1 consonant common
-shangazi shan_azi 1 consonant common
-shangazi shang_zi 1 vowel common
-shangazi shanga_i 1 consonant common
-shangazi shangaz_ 1 vowel common
-shangazi __angazi 2 consonant common
-shangazi s__ngazi 2 vowel common
-shangazi sha__azi 2 consonant common
-shangazi shan__zi 2 vowel common
-shangazi shanga__ 2 vowel common
-shangazi ___ngazi 3 vowel common
-shangazi sha___zi 3 vowel common
+ni _i n 1 consonant common
+ni n_ i 1 vowel common
+ya _a y 1 consonant common
+ya y_ a 1 vowel common
+taa _aa t 1 consonant rare
+taa t_a a 1 vowel rare
+taa ta_ a 1 vowel rare
+taa __a ta 2 vowel rare
+pua _ua p 1 consonant common
+pua p_a u 1 vowel common
+pua pu_ a 1 vowel common
+pua __a pu 2 vowel common
+hii _ii h 1 consonant common
+hii h_i i 1 vowel common
+hii hi_ i 1 vowel common
+hii __i hi 2 vowel common
+jua _ua j 1 consonant common
+jua j_a u 1 vowel common
+jua ju_ a 1 vowel common
+jua __a ju 2 vowel common
+kwa _wa k 1 consonant common
+kwa k_a w 1 consonant common
+kwa kw_ a 1 vowel common
+kwa __a kw 2 consonant common
+kwa k__ wa 2 vowel common
+bega _ega b 1 consonant rare
+bega b_ga e 1 vowel rare
+bega be_a g 1 consonant rare
+bega beg_ a 1 vowel rare
+bega __ga be 2 vowel rare
+bega be__ ga 2 vowel rare
+bata _ata b 1 consonant rare
+bata b_ta a 1 vowel rare
+bata ba_a t 1 consonant rare
+bata bat_ a 1 vowel rare
+bata __ta ba 2 vowel rare
+bata ba__ ta 2 vowel rare
+kaka _aka k 1 consonant rare
+kaka k_ka a 1 vowel rare
+kaka ka_a k 1 consonant rare
+kaka kak_ a 1 vowel rare
+kaka __ka ka 2 vowel rare
+kaka ka__ ka 2 vowel rare
+lori _ori l 1 consonant rare
+lori l_ri o 1 vowel rare
+lori lo_i r 1 consonant rare
+lori lor_ i 1 vowel rare
+lori __ri lo 2 vowel rare
+lori lo__ ri 2 vowel rare
+chai _hai c 1 consonant rare
+chai c_ai h 1 consonant rare
+chai ch_i a 1 vowel rare
+chai cha_ i 1 vowel rare
+chai __ai ch 2 consonant rare
+chai c__i ha 2 vowel rare
+chai ___i cha 3 vowel rare
+chui _hui c 1 consonant common
+chui c_ui h 1 consonant common
+chui ch_i u 1 vowel common
+chui chu_ i 1 vowel common
+chui __ui ch 2 consonant common
+chui c__i hu 2 vowel common
+chui ___i chu 3 vowel common
+gari _ari g 1 consonant common
+gari g_ri a 1 vowel common
+gari ga_i r 1 consonant common
+gari gar_ i 1 vowel common
+gari __ri ga 2 vowel common
+gari ga__ ri 2 vowel common
+vitu _itu v 1 consonant common
+vitu v_tu i 1 vowel common
+vitu vi_u t 1 consonant common
+vitu vit_ u 1 vowel common
+vitu __tu vi 2 vowel common
+vitu vi__ tu 2 vowel common
+sawa _awa s 1 consonant common
+sawa s_wa a 1 vowel common
+sawa sa_a w 1 consonant common
+sawa saw_ a 1 vowel common
+sawa __wa sa 2 vowel common
+sawa sa__ wa 2 vowel common
+dada _ada d 1 consonant common
+dada d_da a 1 vowel common
+dada da_a d 1 consonant common
+dada dad_ a 1 vowel common
+dada __da da 2 vowel common
+dada da__ da 2 vowel common
+paka _aka p 1 consonant common
+paka p_ka a 1 vowel common
+paka pa_a k 1 consonant common
+paka pak_ a 1 vowel common
+paka __ka pa 2 vowel common
+paka pa__ ka 2 vowel common
+mguu _guu m 1 consonant common
+mguu m_uu g 1 consonant common
+mguu mg_u u 1 vowel common
+mguu mgu_ u 1 vowel common
+mguu __uu mg 2 consonant common
+mguu m__u gu 2 vowel common
+mguu ___u mgu 3 vowel common
+meno _eno m 1 consonant common
+meno m_no e 1 vowel common
+meno me_o n 1 consonant common
+meno men_ o 1 vowel common
+meno __no me 2 vowel common
+meno me__ no 2 vowel common
+bibi _ibi b 1 consonant common
+bibi b_bi i 1 vowel common
+bibi bi_i b 1 consonant common
+bibi bib_ i 1 vowel common
+bibi __bi bi 2 vowel common
+bibi bi__ bi 2 vowel common
+mbwa _bwa m 1 consonant common
+mbwa m_wa b 1 consonant common
+mbwa mb_a w 1 consonant common
+mbwa mbw_ a 1 vowel common
+mbwa __wa mb 2 consonant common
+mbwa m__a bw 2 consonant common
+mbwa mb__ wa 2 vowel common
+mbwa ___a mbw 3 consonant common
+mbwa m___ bwa 3 vowel common
+baba _aba b 1 consonant common
+baba b_ba a 1 vowel common
+baba ba_a b 1 consonant common
+baba bab_ a 1 vowel common
+baba __ba ba 2 vowel common
+baba ba__ ba 2 vowel common
+kuku _uku k 1 consonant common
+kuku k_ku u 1 vowel common
+kuku ku_u k 1 consonant common
+kuku kuk_ u 1 vowel common
+kuku __ku ku 2 vowel common
+kuku ku__ ku 2 vowel common
+hiyo _iyo h 1 consonant common
+hiyo h_yo i 1 vowel common
+hiyo hi_o y 1 consonant common
+hiyo hiy_ o 1 vowel common
+hiyo __yo hi 2 vowel common
+hiyo hi__ yo 2 vowel common
+watu _atu w 1 consonant common
+watu w_tu a 1 vowel common
+watu wa_u t 1 consonant common
+watu wat_ u 1 vowel common
+watu __tu wa 2 vowel common
+watu wa__ tu 2 vowel common
+mara _ara m 1 consonant common
+mara m_ra a 1 vowel common
+mara ma_a r 1 consonant common
+mara mar_ a 1 vowel common
+mara __ra ma 2 vowel common
+mara ma__ ra 2 vowel common
+fisi _isi f 1 consonant common
+fisi f_si i 1 vowel common
+fisi fi_i s 1 consonant common
+fisi fis_ i 1 vowel common
+fisi __si fi 2 vowel common
+fisi fi__ si 2 vowel common
+maji _aji m 1 consonant common
+maji m_ji a 1 vowel common
+maji ma_i j 1 consonant common
+maji maj_ i 1 vowel common
+maji __ji ma 2 vowel common
+maji ma__ ji 2 vowel common
+mama _ama m 1 consonant common
+mama m_ma a 1 vowel common
+mama ma_a m 1 consonant common
+mama mam_ a 1 vowel common
+mama __ma ma 2 vowel common
+mama ma__ ma 2 vowel common
+jicho _icho j 1 consonant rare
+jicho j_cho i 1 vowel rare
+jicho ji_ho c 1 consonant rare
+jicho jic_o h 1 consonant rare
+jicho jich_ o 1 vowel rare
+jicho __cho ji 2 vowel rare
+jicho ji__o ch 2 consonant rare
+jicho jic__ ho 2 vowel rare
+jicho ji___ cho 3 vowel rare
+imara _mara i 1 vowel rare
+imara i_ara m 1 consonant rare
+imara im_ra a 1 vowel rare
+imara ima_a r 1 consonant rare
+imara imar_ a 1 vowel rare
+imara i__ra ma 2 vowel rare
+imara ima__ ra 2 vowel rare
+twiga _wiga t 1 consonant rare
+twiga t_iga w 1 consonant rare
+twiga tw_ga i 1 vowel rare
+twiga twi_a g 1 consonant rare
+twiga twig_ a 1 vowel rare
+twiga __iga tw 2 consonant rare
+twiga t__ga wi 2 vowel rare
+twiga twi__ ga 2 vowel rare
+chura _hura c 1 consonant rare
+chura c_ura h 1 consonant rare
+chura ch_ra u 1 vowel rare
+chura chu_a r 1 consonant rare
+chura chur_ a 1 vowel rare
+chura __ura ch 2 consonant rare
+chura c__ra hu 2 vowel rare
+chura chu__ ra 2 vowel rare
+chura ___ra chu 3 vowel rare
+mdomo _domo m 1 consonant rare
+mdomo m_omo d 1 consonant rare
+mdomo md_mo o 1 vowel rare
+mdomo mdo_o m 1 consonant rare
+mdomo mdom_ o 1 vowel rare
+mdomo __omo md 2 consonant rare
+mdomo m__mo do 2 vowel rare
+mdomo mdo__ mo 2 vowel rare
+mdomo ___mo mdo 3 vowel rare
+kutoa _utoa k 1 consonant rare
+kutoa k_toa u 1 vowel rare
+kutoa ku_oa t 1 consonant rare
+kutoa kut_a o 1 vowel rare
+kutoa kuto_ a 1 vowel rare
+kutoa __toa ku 2 vowel rare
+kutoa ku__a to 2 vowel rare
+tumbo _umbo t 1 consonant common
+tumbo t_mbo u 1 vowel common
+tumbo tu_bo m 1 consonant common
+tumbo tum_o b 1 consonant common
+tumbo tumb_ o 1 vowel common
+tumbo __mbo tu 2 vowel common
+tumbo tu__o mb 2 consonant common
+tumbo tum__ bo 2 vowel common
+tumbo tu___ mbo 3 vowel common
+tembo _embo t 1 consonant common
+tembo t_mbo e 1 vowel common
+tembo te_bo m 1 consonant common
+tembo tem_o b 1 consonant common
+tembo temb_ o 1 vowel common
+tembo __mbo te 2 vowel common
+tembo te__o mb 2 consonant common
+tembo tem__ bo 2 vowel common
+tembo te___ mbo 3 vowel common
+mkono _kono m 1 consonant common
+mkono m_ono k 1 consonant common
+mkono mk_no o 1 vowel common
+mkono mko_o n 1 consonant common
+mkono mkon_ o 1 vowel common
+mkono __ono mk 2 consonant common
+mkono m__no ko 2 vowel common
+mkono mko__ no 2 vowel common
+mkono ___no mko 3 vowel common
+ndizi _dizi n 1 consonant common
+ndizi n_izi d 1 consonant common
+ndizi nd_zi i 1 vowel common
+ndizi ndi_i z 1 consonant common
+ndizi ndiz_ i 1 vowel common
+ndizi __izi nd 2 consonant common
+ndizi n__zi di 2 vowel common
+ndizi ndi__ zi 2 vowel common
+ndizi ___zi ndi 3 vowel common
+viatu _iatu v 1 consonant common
+viatu v_atu i 1 vowel common
+viatu vi_tu a 1 vowel common
+viatu via_u t 1 consonant common
+viatu viat_ u 1 vowel common
+viatu __atu vi 2 vowel common
+viatu via__ tu 2 vowel common
+ndiyo _diyo n 1 consonant common
+ndiyo n_iyo d 1 consonant common
+ndiyo nd_yo i 1 vowel common
+ndiyo ndi_o y 1 consonant common
+ndiyo ndiy_ o 1 vowel common
+ndiyo __iyo nd 2 consonant common
+ndiyo n__yo di 2 vowel common
+ndiyo ndi__ yo 2 vowel common
+ndiyo ___yo ndi 3 vowel common
+viazi _iazi v 1 consonant common
+viazi v_azi i 1 vowel common
+viazi vi_zi a 1 vowel common
+viazi via_i z 1 consonant common
+viazi viaz_ i 1 vowel common
+viazi __azi vi 2 vowel common
+viazi via__ zi 2 vowel common
+punda _unda p 1 consonant common
+punda p_nda u 1 vowel common
+punda pu_da n 1 consonant common
+punda pun_a d 1 consonant common
+punda pund_ a 1 vowel common
+punda __nda pu 2 vowel common
+punda pu__a nd 2 consonant common
+punda pun__ da 2 vowel common
+punda pu___ nda 3 vowel common
+panya _anya p 1 consonant common
+panya p_nya a 1 vowel common
+panya pa_ya n 1 consonant common
+panya pan_a y 1 consonant common
+panya pany_ a 1 vowel common
+panya __nya pa 2 vowel common
+panya pa__a ny 2 consonant common
+panya pan__ ya 2 vowel common
+panya pa___ nya 3 vowel common
+mboga _boga m 1 consonant common
+mboga m_oga b 1 consonant common
+mboga mb_ga o 1 vowel common
+mboga mbo_a g 1 consonant common
+mboga mbog_ a 1 vowel common
+mboga __oga mb 2 consonant common
+mboga m__ga bo 2 vowel common
+mboga mbo__ ga 2 vowel common
+mboga ___ga mbo 3 vowel common
+mbuzi _buzi m 1 consonant common
+mbuzi m_uzi b 1 consonant common
+mbuzi mb_zi u 1 vowel common
+mbuzi mbu_i z 1 consonant common
+mbuzi mbuz_ i 1 vowel common
+mbuzi __uzi mb 2 consonant common
+mbuzi m__zi bu 2 vowel common
+mbuzi mbu__ zi 2 vowel common
+mbuzi ___zi mbu 3 vowel common
+nyoka _yoka n 1 consonant common
+nyoka n_oka y 1 consonant common
+nyoka ny_ka o 1 vowel common
+nyoka nyo_a k 1 consonant common
+nyoka nyok_ a 1 vowel common
+nyoka __oka ny 2 consonant common
+nyoka n__ka yo 2 vowel common
+nyoka nyo__ ka 2 vowel common
+nyoka ___ka nyo 3 vowel common
+nyama _yama n 1 consonant common
+nyama n_ama y 1 consonant common
+nyama ny_ma a 1 vowel common
+nyama nya_a m 1 consonant common
+nyama nyam_ a 1 vowel common
+nyama __ama ny 2 consonant common
+nyama n__ma ya 2 vowel common
+nyama nya__ ma 2 vowel common
+nyama ___ma nya 3 vowel common
+simba _imba s 1 consonant common
+simba s_mba i 1 vowel common
+simba si_ba m 1 consonant common
+simba sim_a b 1 consonant common
+simba simb_ a 1 vowel common
+simba __mba si 2 vowel common
+simba si__a mb 2 consonant common
+simba sim__ ba 2 vowel common
+simba si___ mba 3 vowel common
+hivyo _ivyo h 1 consonant common
+hivyo h_vyo i 1 vowel common
+hivyo hi_yo v 1 consonant common
+hivyo hiv_o y 1 consonant common
+hivyo hivy_ o 1 vowel common
+hivyo __vyo hi 2 vowel common
+hivyo hi__o vy 2 consonant common
+hivyo hiv__ yo 2 vowel common
+hivyo hi___ vyo 3 vowel common
+vidole _idole v 1 consonant rare
+vidole v_dole i 1 vowel rare
+vidole vi_ole d 1 consonant rare
+vidole vid_le o 1 vowel rare
+vidole vido_e l 1 consonant rare
+vidole vidol_ e 1 vowel rare
+vidole __dole vi 2 vowel rare
+vidole vi__le do 2 vowel rare
+vidole vido__ le 2 vowel rare
+hunywa _unywa h 1 consonant rare
+hunywa h_nywa u 1 vowel rare
+hunywa hu_ywa n 1 consonant rare
+hunywa hun_wa y 1 consonant rare
+hunywa huny_a w 1 consonant rare
+hunywa hunyw_ a 1 vowel rare
+hunywa __nywa hu 2 vowel rare
+hunywa hu__wa ny 2 consonant rare
+hunywa huny__ wa 2 vowel rare
+hunywa hu___a nyw 3 consonant rare
+farasi _arasi f 1 consonant common
+farasi f_rasi a 1 vowel common
+farasi fa_asi r 1 consonant common
+farasi far_si a 1 vowel common
+farasi fara_i s 1 consonant common
+farasi faras_ i 1 vowel common
+farasi __rasi fa 2 vowel common
+farasi fa__si ra 2 vowel common
+farasi fara__ si 2 vowel common
+kondoo _ondoo k 1 consonant common
+kondoo k_ndoo o 1 vowel common
+kondoo ko_doo n 1 consonant common
+kondoo kon_oo d 1 consonant common
+kondoo kond_o o 1 vowel common
+kondoo kondo_ o 1 vowel common
+kondoo __ndoo ko 2 vowel common
+kondoo ko__oo nd 2 consonant common
+kondoo kon__o do 2 vowel common
+kondoo ko___o ndo 3 vowel common
+vizuri _izuri v 1 consonant common
+vizuri v_zuri i 1 vowel common
+vizuri vi_uri z 1 consonant common
+vizuri viz_ri u 1 vowel common
+vizuri vizu_i r 1 consonant common
+vizuri vizur_ i 1 vowel common
+vizuri __zuri vi 2 vowel common
+vizuri vizu__ ri 2 vowel common
+kichwa _ichwa k 1 consonant common
+kichwa k_chwa i 1 vowel common
+kichwa ki_hwa c 1 consonant common
+kichwa kic_wa h 1 consonant common
+kichwa kich_a w 1 consonant common
+kichwa kichw_ a 1 vowel common
+kichwa __chwa ki 2 vowel common
+kichwa ki__wa ch 2 consonant common
+kichwa kich__ wa 2 vowel common
+mjomba _jomba m 1 consonant common
+mjomba m_omba j 1 consonant common
+mjomba mj_mba o 1 vowel common
+mjomba mjo_ba m 1 consonant common
+mjomba mjom_a b 1 consonant common
+mjomba mjomb_ a 1 vowel common
+mjomba __omba mj 2 consonant common
+mjomba m__mba jo 2 vowel common
+mjomba mjo__a mb 2 consonant common
+mjomba mjom__ ba 2 vowel common
+mjomba ___mba mjo 3 vowel common
+mjomba mjo___ mba 3 vowel common
+angani _ngani a 1 vowel common
+angani a_gani n 1 consonant common
+angani an_ani g 1 consonant common
+angani ang_ni a 1 vowel common
+angani anga_i n 1 consonant common
+angani angan_ i 1 vowel common
+angani a__ani ng 2 consonant common
+angani an__ni ga 2 vowel common
+angani anga__ ni 2 vowel common
+angani a___ni nga 3 vowel common
+maziwa _aziwa m 1 consonant common
+maziwa m_ziwa a 1 vowel common
+maziwa ma_iwa z 1 consonant common
+maziwa maz_wa i 1 vowel common
+maziwa mazi_a w 1 consonant common
+maziwa maziw_ a 1 vowel common
+maziwa __ziwa ma 2 vowel common
+maziwa ma__wa zi 2 vowel common
+maziwa mazi__ wa 2 vowel common
+nyanya _yanya n 1 consonant common
+nyanya n_anya y 1 consonant common
+nyanya ny_nya a 1 vowel common
+nyanya nya_ya n 1 consonant common
+nyanya nyan_a y 1 consonant common
+nyanya nyany_ a 1 vowel common
+nyanya __anya ny 2 consonant common
+nyanya n__nya ya 2 vowel common
+nyanya nya__a ny 2 consonant common
+nyanya nyan__ ya 2 vowel common
+nyanya ___nya nya 3 vowel common
+nyanya nya___ nya 3 vowel common
+samaki _amaki s 1 consonant common
+samaki s_maki a 1 vowel common
+samaki sa_aki m 1 consonant common
+samaki sam_ki a 1 vowel common
+samaki sama_i k 1 consonant common
+samaki samak_ i 1 vowel common
+samaki __maki sa 2 vowel common
+samaki sa__ki ma 2 vowel common
+samaki sama__ ki 2 vowel common
+rafiki _afiki r 1 consonant common
+rafiki r_fiki a 1 vowel common
+rafiki ra_iki f 1 consonant common
+rafiki raf_ki i 1 vowel common
+rafiki rafi_i k 1 consonant common
+rafiki rafik_ i 1 vowel common
+rafiki __fiki ra 2 vowel common
+rafiki ra__ki fi 2 vowel common
+rafiki rafi__ ki 2 vowel common
+watoto _atoto w 1 consonant common
+watoto w_toto a 1 vowel common
+watoto wa_oto t 1 consonant common
+watoto wat_to o 1 vowel common
+watoto wato_o t 1 consonant common
+watoto watot_ o 1 vowel common
+watoto __toto wa 2 vowel common
+watoto wa__to to 2 vowel common
+watoto wato__ to 2 vowel common
+mkulima _kulima m 1 consonant common
+mkulima m_ulima k 1 consonant common
+mkulima mk_lima u 1 vowel common
+mkulima mku_ima l 1 consonant common
+mkulima mkul_ma i 1 vowel common
+mkulima mkuli_a m 1 consonant common
+mkulima mkulim_ a 1 vowel common
+mkulima __ulima mk 2 consonant common
+mkulima m__lima ku 2 vowel common
+mkulima mku__ma li 2 vowel common
+mkulima mkuli__ ma 2 vowel common
+mkulima ___lima mku 3 vowel common
+mwalimu _walimu m 1 consonant common
+mwalimu m_alimu w 1 consonant common
+mwalimu mw_limu a 1 vowel common
+mwalimu mwa_imu l 1 consonant common
+mwalimu mwal_mu i 1 vowel common
+mwalimu mwali_u m 1 consonant common
+mwalimu mwalim_ u 1 vowel common
+mwalimu __alimu mw 2 consonant common
+mwalimu m__limu wa 2 vowel common
+mwalimu mwa__mu li 2 vowel common
+mwalimu mwali__ mu 2 vowel common
+mwalimu ___limu mwa 3 vowel common
+wanyama _anyama w 1 consonant common
+wanyama w_nyama a 1 vowel common
+wanyama wa_yama n 1 consonant common
+wanyama wan_ama y 1 consonant common
+wanyama wany_ma a 1 vowel common
+wanyama wanya_a m 1 consonant common
+wanyama wanyam_ a 1 vowel common
+wanyama __nyama wa 2 vowel common
+wanyama wa__ama ny 2 consonant common
+wanyama wan__ma ya 2 vowel common
+wanyama wanya__ ma 2 vowel common
+wanyama wa___ma nya 3 vowel common
+chakula _hakula c 1 consonant common
+chakula c_akula h 1 consonant common
+chakula ch_kula a 1 vowel common
+chakula cha_ula k 1 consonant common
+chakula chak_la u 1 vowel common
+chakula chaku_a l 1 consonant common
+chakula chakul_ a 1 vowel common
+chakula __akula ch 2 consonant common
+chakula c__kula ha 2 vowel common
+chakula cha__la ku 2 vowel common
+chakula chaku__ la 2 vowel common
+chakula ___kula cha 3 vowel common
+sungura _ungura s 1 consonant common
+sungura s_ngura u 1 vowel common
+sungura su_gura n 1 consonant common
+sungura sun_ura g 1 consonant common
+sungura sung_ra u 1 vowel common
+sungura sungu_a r 1 consonant common
+sungura sungur_ a 1 vowel common
+sungura __ngura su 2 vowel common
+sungura su__ura ng 2 consonant common
+sungura sun__ra gu 2 vowel common
+sungura sungu__ ra 2 vowel common
+sungura su___ra ngu 3 vowel common
+maharage _aharage m 1 consonant rare
+maharage m_harage a 1 vowel rare
+maharage ma_arage h 1 consonant rare
+maharage mah_rage a 1 vowel rare
+maharage maha_age r 1 consonant rare
+maharage mahar_ge a 1 vowel rare
+maharage mahara_e g 1 consonant rare
+maharage maharag_ e 1 vowel rare
+maharage __harage ma 2 vowel rare
+maharage ma__rage ha 2 vowel rare
+maharage maha__ge ra 2 vowel rare
+maharage mahara__ ge 2 vowel rare
+shangazi _hangazi s 1 consonant common
+shangazi s_angazi h 1 consonant common
+shangazi sh_ngazi a 1 vowel common
+shangazi sha_gazi n 1 consonant common
+shangazi shan_azi g 1 consonant common
+shangazi shang_zi a 1 vowel common
+shangazi shanga_i z 1 consonant common
+shangazi shangaz_ i 1 vowel common
+shangazi __angazi sh 2 consonant common
+shangazi s__ngazi ha 2 vowel common
+shangazi sha__azi ng 2 consonant common
+shangazi shan__zi ga 2 vowel common
+shangazi shanga__ zi 2 vowel common
+shangazi ___ngazi sha 3 vowel common
+shangazi sha___zi nga 3 vowel common

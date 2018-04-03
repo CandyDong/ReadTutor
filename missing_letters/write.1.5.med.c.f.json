@@ -1,0 +1,12 @@
+{
+	"bootFeatures": "FTR_WORDS",
+	"random": false,
+	"singleStimulus": true,
+	"dataSource": [
+		{
+			"stimulus": "T_MBO",
+			"audioStimulus": ["Write the missing letter in", "tumbo", ""],
+			"answer": "U"
+		}
+	]
+}

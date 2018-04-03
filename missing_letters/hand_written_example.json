@@ -18,3 +18,25 @@
 
 	]
 }
+
+{ "bootFeatures":"FTR_WORDS",
+
+ "random": false,
+
+ "singleStimulus": true,
+
+ "dataSource": [
+
+ 
+
+ 
+
+{
+
+      "stimulus": "C_T",
+
+      "audioStimulus": ["Write the missing letter in", "cat", ""],
+
+      "answer": "A"
+
+    }]

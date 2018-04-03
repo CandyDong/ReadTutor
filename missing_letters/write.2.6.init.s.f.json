@@ -1,0 +1,12 @@
+{
+	"bootFeatures": "FTR_WORDS",
+	"random": false,
+	"singleStimulus": true,
+	"dataSource": [
+		{
+			"stimulus": "__RASI",
+			"audioStimulus": ["Write the missing letter in", "farasi", ""],
+			"answer": "FA"
+		}
+	]
+}

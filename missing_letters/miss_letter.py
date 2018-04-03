@@ -223,7 +223,7 @@ def make_blank(word, part, index_start):
 
 def make_string(word, part, index_start, level, token, freq_level):
 	word_blank = make_blank(word, part, index_start)
-	return word + " " + word_blank + " " + str(len(part)) + " " + token + " " + freq_level + "\n"
+	return word + " " + word_blank + " " + part + " " + str(len(part)) + " " + token + " " + freq_level + "\n"
 
 
 
@@ -326,7 +326,7 @@ def generate_data(level_list, problem_path):
 				problem_list.append(line[:-1])
 
 		for level in level_list:
-			print("\n")
+			#print("\n")
 			
 			json_path = level['Name']
 			num_miss = int(float(level['# Missing Letters']))
@@ -335,81 +335,117 @@ def generate_data(level_list, problem_path):
 			pronu = level['Pronunciation']
 			freq = level['Word Frequency']
 
-			print("Finding problem for level %s" % level['Level'])
-			print(level)
+			#print("Finding problem for level %s" % level['Level'])
+			#print(level)
 
 			#loop through problem.txt to find an appropriate word
 			#word word_blank len(part) token freq_level
+			#ni _i n 1 consonant common
 			for problem in problem_list:
-				print("Checking problem %s" % problem)
+				#print("Checking problem %s" % problem)
+				en = 0
 
 				problem_part = problem.split(" ")
+				
 				#check word length
 				prob_intact = problem_part[0]
 				if len(prob_intact) != word_len:
 					if len(prob_intact) > word_len:
-						print("no appropriate word exists!!")
+						if (en):
+							print("no appropriate word exists!!")
 						break
-					print("invalid word length")
+					if (en):
+						print("invalid word length")
 					continue
-				print("Word length checked")
+				if (en): print("Word length checked")
 
 				#check number of missing letters
-				prob_num_miss = problem_part[2]
+				prob_num_miss = problem_part[3]
 				if int(float(prob_num_miss)) != num_miss:
-					print("invalid number of missing letters")
+					if (en): print("invalid number of missing letters, %d, %d" %(int(float(prob_num_miss)), num_miss))
 					continue
-				print("number of missing letters checked")
+				if (en): print("number of missing letters checked")
 
 				#check position of the missing part
 				prob_part = problem_part[1]
 				if part_pos == "initial":
 					if not prob_part.startswith("_"):
-						print("invalid part position")
+						if (en): print("invalid part position")
 						continue
 				elif part_pos == "final":
 					if not prob_part.endswith("_"):
-						print("invalid part position")
+						if (en): print("invalid part position")
 						continue
 				else:
 					if prob_part.startswith("_") or prob_part.endswith("_"):
-						print("invalid part position")
+						if (en): print("invalid part position")
 						continue
-				print("part position checked")
+				if (en): print("part position checked")
 
 				#check pronunciation 
-				prob_pro = problem_part[3]
-				if pronu != prob_pro:
-					print("invalid pronunciation")
+				prob_pro = problem_part[4]
+				if prob_pro in pronu:
+					if (en): print("invalid pronunciation")
 					continue
-				print("pronunciation checked")
+				if (en): print("pronunciation checked")
 
 				#check word frequency
-				prob_freq = problem_part[4]
+				prob_freq = problem_part[5]
 				if freq != prob_freq:
-					print("invalid word frequency ")
+					if (en): print("invalid word frequency ")
 					continue
-				print("word frequency checked")
+				if (en): print("word frequency checked")
 
 				#check if word is repeated
 				for info_pair in word_list:
 					if prob_intact in info_pair:
-						print("repeated word")
+						if (en): print("repeated word")
 						continue
 
-				print("word passed!!")
-				word_list.append([prob_intact, json_path])
+				if (en): print("word passed!!")
+				prob_quest = problem_part[2]
+				word_list.append([prob_intact, prob_part, prob_quest, json_path])
 				break
+		#print(word_list)
+		
+		#write into JSON files
+		for word_info in word_list:
+			prob_intact = word_info[0]
+			prob_part = word_info[1]
+			prob_quest = word_info[2]
+			prob_path = word_info[3]
+			prob_str = ""
 
+			# { "bootFeatures":"FTR_WORDS",
 
-		print(word_list)
+	 		#"random": false,
 
+	 		#"singleStimulus": true,
 
+	 		# "dataSource": [
+				# {
+				# {
 
-				
+		    #   "stimulus": "C_T",
 
+		    #   "audioStimulus": ["Write the missing letter in", "cat", ""],
 
+		    #   "answer": "A"
 
+		    # }]
+
+			prob_str += '{\n\t\"bootFeatures\": \"FTR_WORDS\",'
+			prob_str += '\n\t\"random\": false,\n\t\"singleStimulus\": true,\n'
+			prob_str += '\t\"dataSource\": [\n\t\t{\n\t\t\t'
+			prob_str += '\"stimulus\": \"' + prob_part.upper() + '\",\n\t\t\t'
+			prob_str += '\"audioStimulus\": [\"Write the missing letter in\", \"' + prob_intact + '\", \"\"],\n\t\t\t'
+			prob_str += '\"answer\": \"' + prob_quest.upper() + '\"\n\t\t}\n\t]\n}'
+
+			prob_file = open(prob_path, 'w')
+			prob_file.write(prob_str)
+			prob_file.close()
+
+		return
 
 
 				
